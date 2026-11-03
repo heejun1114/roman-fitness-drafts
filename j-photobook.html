@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>로망휘트니스 | 함께 배우는 모습을 보세요</title>
+<meta name="description" content="로망휘트니스 고척신정점, 영등포점, 파주교하점의 수업과 운동 공간을 사진으로 보세요. 트레이너 수상 기록, 네이버 평점, 이용료, 지점 정보가 함께 있어요.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="assets/img/logo_symbol.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+/* 시안 J · 현장록
+   흰 바탕 + 구획선 + 사진. 로즈(#B83A55)는 작은 표식과 주 버튼에만.
+   도판 번호(.pl)만 아주 얇은 굵기로 크게, 순위 숫자(.rank)는 아주 굵게. 나머지 글자는 Pretendard 기본 굵기. */
+:root{
+  --bg:#FFFFFF;
+  --ink:#151515;
+  --ink2:#454A52;
+  --ink3:#62686F;
+  --line:#DDE0E4;
+  --rose:#B83A55;
+  --font:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+  --wrap:1360px; --gut:40px; --hh:64px;
+  --pl-l:104px; --pl-m:60px; --pl-s:30px;
+  --sec:clamp(96px,10vw,152px);
+}
+@media (max-width:760px){
+  :root{ --gut:20px; --hh:60px; --pl-l:64px; --pl-m:44px; --pl-s:26px; --sec:88px; }
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){ html{scroll-behavior:smooth} }
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--font); font-size:16px; line-height:1.6;
+  letter-spacing:-0.01em; word-break:keep-all; overflow-wrap:break-word;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block; max-width:100%; height:auto}
+a{color:inherit; text-underline-offset:4px; text-decoration-thickness:1px}
+h1,h2,h3,p,ol,ul,figure,dl,dd{margin:0}
+ol,ul{padding:0; list-style:none}
+button{font:inherit; color:inherit}
+:focus-visible{outline:2px solid var(--rose); outline-offset:3px}
+.sr{position:absolute!important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0}
+.skip{position:absolute; left:12px; top:-80px; z-index:60; padding:10px 14px; background:var(--ink); color:#fff; font-size:14px; font-weight:600; text-decoration:none}
+.skip:focus{top:12px}
+.wrap{max-width:calc(var(--wrap) + var(--gut)*2); margin-inline:auto; padding-inline:var(--gut)}
+[id]{scroll-margin-top:calc(var(--hh) + 16px)}
+
+/* ---------- 칩·태그 ---------- */
+.chk{
+  display:inline-block; margin-left:6px; padding:0 6px; vertical-align:2px;
+  font-size:11px; line-height:18px; font-weight:600; letter-spacing:0; white-space:nowrap;
+  color:#6E4A00; border:1px dashed #B48A2C; border-radius:3px; background:#fff; cursor:help;
+}
+.stamp{
+  position:absolute; left:10px; bottom:10px; z-index:2;
+  padding:3px 7px; font-size:11px; line-height:1.4; font-weight:600; letter-spacing:0;
+  color:#fff; background:rgba(21,21,21,.82);
+}
+.tag{
+  display:inline-block; padding:2px 7px; font-size:11px; line-height:1.5; font-weight:600; letter-spacing:0;
+  color:#fff; background:var(--ink); vertical-align:1px;
+}
+
+/* ---------- 버튼: 주 버튼 1종 + 테두리 버튼 1종 ---------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  min-height:52px; padding:0 26px; border:1px solid transparent; border-radius:2px;
+  font-size:16px; font-weight:700; letter-spacing:-0.01em; text-decoration:none; white-space:nowrap; cursor:pointer;
+}
+.btn-main{background:var(--rose); color:#fff}
+.btn-main:hover{background:#9C2E47}
+.btn-sm{min-height:44px; padding:0 16px; font-size:14px}
+.btn-line{background:#fff; color:var(--ink); border-color:var(--ink)}
+.btn-line:hover{background:#F3F4F6}
+
+/* ---------- 머리글 ---------- */
+.top{position:sticky; top:0; z-index:30; background:rgba(255,255,255,.96); border-bottom:1px solid var(--line)}
+.top-in{height:var(--hh); display:flex; align-items:center; justify-content:space-between; gap:16px}
+.brand{display:inline-flex; align-items:center; gap:10px; min-height:44px; text-decoration:none; font-size:17px; font-weight:700; letter-spacing:-0.02em}
+.brand img{width:36px}
+
+/* ---------- 도판 캡션 (사진 아래, 나이키처럼 사진 위엔 글 없음) ---------- */
+.cap{display:flex; align-items:last baseline; gap:14px; margin-top:16px; min-width:0}
+.pl{
+  flex:none; font-size:var(--pl-m); font-weight:140; line-height:.74; letter-spacing:-0.05em;
+  font-variant-numeric:tabular-nums; color:var(--ink);
+}
+.cap.l .pl{font-size:var(--pl-l)}
+.cap.s .pl{font-size:var(--pl-s)}
+.cap-t{font-size:14px; line-height:1.45; color:var(--ink2); padding-bottom:1px; min-width:0}
+.cap-t b{color:var(--ink); font-weight:700}
+
+/* 사진 틀 */
+.ph{position:relative; overflow:hidden; background:#E9EBEE}
+.ph img{width:100%; height:100%; object-fit:cover}
+/* 정밀 크롭: 원본 좌표 (cx, cy)에서 cw × ch 영역만 보여 준다 */
+.crop{position:relative; overflow:hidden; aspect-ratio:var(--cw) / var(--ch); background:#E9EBEE}
+.crop img{
+  position:absolute; max-width:none; height:auto;
+  width:calc(var(--iw) / var(--cw) * 100%);
+  left:calc(var(--cx) / var(--cw) * -100%);
+  top:calc(var(--cy) / var(--ch) * -100%);
+}
+
+/* ---------- 특집 머리 ---------- */
+.feat{padding-top:var(--sec)}
+.fh{display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:end; gap:10px 24px; padding-top:18px; border-top:1px solid var(--line); margin-bottom:clamp(32px,4vw,56px)}
+.fh-no{grid-column:1 / -1; display:flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:var(--ink2)}
+.fh-no::before,.kicker::before{content:""; width:8px; height:8px; background:var(--rose); flex:none}
+.fh h2{font-size:clamp(30px,3.7vw,54px); font-weight:700; line-height:1.15; letter-spacing:-0.035em}
+.fh-pl{font-size:14px; color:var(--ink3); padding-bottom:6px; white-space:nowrap}
+
+/* ---------- 1. 표지 ---------- */
+.cover{display:grid; grid-template-columns:minmax(0,1fr) auto; column-gap:clamp(40px,6.5vw,104px); padding-top:28px}
+.cover-text{display:flex; flex-direction:column; justify-content:space-between; min-width:0; padding-bottom:calc(var(--pl-m) * .74 + 14px)}
+.kicker{display:flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:var(--ink2)}
+.cover h1{margin-top:28px; font-size:clamp(40px,6.4vw,96px); font-weight:700; line-height:1.08; letter-spacing:-0.045em}
+.cover-low{display:flex; flex-direction:column; gap:28px}
+.toc-h{font-size:13px; font-weight:600; color:var(--ink3); margin-bottom:8px}
+.toc ol{border-bottom:1px solid var(--line)}
+.toc a{display:grid; grid-template-columns:48px minmax(0,1fr) auto; align-items:baseline; gap:12px; min-height:46px; padding:11px 0; border-top:1px solid var(--line); text-decoration:none}
+.toc-n{font-size:22px; font-weight:160; line-height:1; letter-spacing:-0.04em; font-variant-numeric:tabular-nums}
+.toc-t{font-size:16px; font-weight:600}
+.toc-p{font-size:13px; color:var(--ink3); white-space:nowrap}
+.toc a:hover .toc-t{color:var(--rose)}
+.cover-act{display:flex; align-items:center; gap:20px; flex-wrap:wrap}
+.cover-fig img{height:clamp(460px, calc(100vh - 176px), 780px); width:auto; aspect-ratio:720 / 960; object-fit:cover}
+
+/* ---------- 2. 정돈된 공간 (큰 사진 1 + 작은 사진 2) ---------- */
+.sp-grid{display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); column-gap:24px}
+.sp-side{grid-column:1 / span 4; display:flex; flex-direction:column; gap:36px}
+.sp-side .ph{aspect-ratio:3 / 2}
+.sp-main{grid-column:5 / span 8; display:flex; flex-direction:column}
+.sp-main .ph{flex:1 1 auto; min-height:420px}
+.sp-main .ph img{position:absolute; inset:0; transform:scale(1.12); transform-origin:62% 90%}
+.tally{display:flex; align-items:baseline; flex-wrap:wrap; gap:6px 18px; margin-top:56px; padding-top:20px; border-top:1px solid var(--line)}
+.tally-k{font-size:20px; font-weight:700; letter-spacing:-0.02em}
+.tally-n{font-size:64px; font-weight:700; line-height:1; letter-spacing:-0.04em; font-variant-numeric:tabular-nums}
+.tally-s{font-size:13px; color:var(--ink3)}
+
+/* ---------- 3. 운동하는 공간 (크기가 다른 도판이 이어짐) ---------- */
+.album{display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); column-gap:24px; row-gap:96px}
+.a05{grid-column:1 / span 8}
+.a05 .ph{aspect-ratio:3 / 2}
+.a06{grid-column:10 / span 3; align-self:end}
+.a06 .ph{aspect-ratio:3 / 4}
+.a07{grid-column:1 / span 4; align-self:end}
+.a08{grid-column:6 / span 7}
+.a08 .ph{aspect-ratio:3 / 2}
+.a09{margin-top:96px}
+.a09 .ph{aspect-ratio:12 / 5; max-height:680px; width:100%}
+
+/* ---------- 4. 트레이너의 기록 ---------- */
+.strip-note{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:16px; font-size:13px; color:var(--ink3)}
+.strip{display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:16px}
+.tr .crop img{filter:grayscale(1) contrast(1.06)}
+.tr-cap{display:flex; align-items:first baseline; gap:10px; margin-top:14px}
+.tr-cap .pl{font-size:var(--pl-s)}
+.tr-t{display:flex; flex-direction:column; min-width:0; font-size:13px; line-height:1.4; color:var(--ink2)}
+.tr-t b{font-size:16px; color:var(--ink)}
+.aw{display:inline-flex; align-items:center; gap:5px; margin-top:6px; font-size:12px; font-weight:700; color:var(--rose)}
+.aw::before{content:""; width:6px; height:6px; background:var(--rose)}
+.strip-more{margin-top:24px; font-size:13px; color:var(--ink3)}
+.strip-more b{color:var(--ink2); font-weight:600}
+
+.rec-wrap{display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); column-gap:24px; margin-top:104px}
+.rec{grid-column:1 / span 7}
+.sub-h{font-size:14px; font-weight:600; color:var(--ink2); margin-bottom:14px}
+.rec-list{border-bottom:1px solid var(--line)}
+.rec-list li{display:grid; grid-template-columns:136px minmax(0,1fr); align-items:center; gap:16px; padding:22px 0; border-top:1px solid var(--line)}
+.rank{font-size:96px; font-weight:820; line-height:.78; letter-spacing:-0.06em; font-variant-numeric:tabular-nums}
+.rank small{font-size:22px; font-weight:700; letter-spacing:-0.02em; margin-left:4px}
+.rec-e{font-size:22px; font-weight:700; line-height:1.35; letter-spacing:-0.025em}
+.rec-m{margin-top:6px; font-size:14px; color:var(--ink2)}
+.rec-photo{grid-column:9 / span 4; align-self:end}
+
+/* ---------- 5. 회원이 고른 말 · 이용 정보 ---------- */
+.info-top{display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); column-gap:24px}
+.kw{grid-column:1 / span 6}
+.rate{grid-column:8 / span 5}
+.src{font-size:13px; color:var(--ink3); margin:-8px 0 18px}
+.kw-list li{display:grid; grid-template-columns:150px minmax(0,1fr) 52px; align-items:center; gap:14px; min-height:46px; border-top:1px solid var(--line)}
+.kw-list li:last-child{border-bottom:1px solid var(--line)}
+.kw-k{font-size:15px; font-weight:600}
+.kw-bar{height:6px; background:#EEF0F2}
+.kw-bar i{display:block; height:100%; width:calc(var(--v) / 843 * 100%); background:var(--ink)}
+.kw-n{font-size:15px; font-weight:700; text-align:right; font-variant-numeric:tabular-nums}
+
+.rate-total{display:flex; align-items:baseline; flex-wrap:wrap; gap:4px 14px; padding-bottom:18px}
+.rate-total b{font-size:64px; line-height:1; font-weight:700; letter-spacing:-0.04em; font-variant-numeric:tabular-nums}
+.rate-total span{font-size:14px; color:var(--ink2)}
+.rate-list a{display:grid; grid-template-columns:minmax(0,1fr) auto auto; align-items:center; gap:16px; min-height:52px; border-top:1px solid var(--line); text-decoration:none}
+.rate-list li:last-child a{border-bottom:1px solid var(--line)}
+.rate-b{font-size:15px; font-weight:600}
+.rate-n{font-size:24px; font-weight:700; letter-spacing:-0.02em; font-variant-numeric:tabular-nums}
+.rate-n::before{content:"★"; color:var(--rose); font-size:15px; margin-right:6px; vertical-align:3px}
+.rate-c{font-size:13px; color:var(--ink3); min-width:76px; text-align:right}
+.rate-list a:hover .rate-b{text-decoration:underline}
+
+.br-grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:repeat(6,auto); column-gap:24px; margin-top:104px}
+.br{display:grid; grid-row:span 6; grid-template-rows:subgrid}
+.br > div{padding:16px 0 18px; border-top:1px solid var(--line)}
+.br > .br-head{border-top:2px solid var(--ink); padding-top:18px}
+.br-name{font-size:26px; font-weight:700; letter-spacing:-0.03em; line-height:1.25}
+.br-stn{font-size:13px; color:var(--ink3); margin-top:2px}
+.k{display:block; font-size:12px; font-weight:600; color:var(--ink3); margin-bottom:6px; letter-spacing:0}
+.v{font-size:15px; line-height:1.6}
+.price{display:flex; align-items:baseline; gap:4px; flex-wrap:wrap; line-height:1}
+.price .n{font-size:64px; font-weight:700; letter-spacing:-0.045em; font-variant-numeric:tabular-nums}
+.price .u{font-size:20px; font-weight:700}
+.price.p-ask{font-size:40px; font-weight:700; letter-spacing:-0.04em; padding:12px 0 8px}
+.p-b{margin-top:10px; font-size:14px; color:var(--ink2)}
+.no{font-weight:700}
+.links{display:flex; flex-wrap:wrap; gap:0 18px}
+.links a{display:inline-flex; align-items:center; min-height:44px; font-size:15px; font-weight:600}
+.fine{margin-top:20px; font-size:13px; color:var(--ink3); line-height:2}
+
+.closing{display:flex; align-items:center; flex-wrap:wrap; gap:16px 24px; margin-top:72px; padding:40px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+.closing-t{font-size:clamp(22px,2.2vw,30px); font-weight:700; letter-spacing:-0.03em; margin-right:auto}
+.closing-s{font-size:13px; color:var(--ink3)}
+
+/* ---------- 판권면 (푸터) ---------- */
+.foot{margin-top:var(--sec); padding:40px 0 96px; border-top:1px solid var(--line); font-size:13px; color:var(--ink2); line-height:1.8}
+.foot-in{display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); column-gap:24px; row-gap:20px}
+.foot-brand{grid-column:1 / span 4}
+.foot-brand .brand{margin-bottom:6px}
+.foot-meta{grid-column:6 / span 7}
+.foot-small{color:var(--ink3)}
+.nw{white-space:nowrap}
+
+.draft{position:fixed; right:14px; bottom:14px; z-index:40; padding:4px 9px; font-size:11px; font-weight:700; letter-spacing:0; background:#fff; border:1px solid var(--ink); color:var(--ink)}
+
+/* ---------- 지점 고르는 시트 ---------- */
+.sheet{width:min(560px, calc(100% - 32px)); max-height:calc(100% - 32px); padding:0; border:0; border-radius:4px; color:var(--ink); background:#fff; box-shadow:0 24px 64px rgba(0,0,0,.25)}
+.sheet::backdrop{background:rgba(21,21,21,.5)}
+.ask-in{padding:24px 24px 20px}
+.ask-head{display:flex; align-items:flex-start; justify-content:space-between; gap:16px; padding-bottom:16px; border-bottom:1px solid var(--line)}
+.ask-title{font-size:22px; font-weight:700; letter-spacing:-0.03em; line-height:1.3}
+.ask-sub{font-size:13px; color:var(--ink3); margin-top:4px}
+.ask-x{min-width:44px; min-height:44px; padding:0 10px; border:0; background:none; font-size:14px; font-weight:600; text-decoration:underline; text-underline-offset:4px; cursor:pointer}
+.ask-list li{padding:16px 0; border-bottom:1px solid var(--line)}
+.ask-b{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:10px}
+.ask-b b{font-size:18px}
+.ask-b span{font-size:13px; color:var(--ink3)}
+.ask-acts{display:flex; flex-wrap:wrap; gap:8px}
+.ask-acts .btn{min-height:44px; padding:0 14px; font-size:14px; font-weight:600}
+
+/* ================= 태블릿 ================= */
+@media (max-width:1100px){
+  .cover-fig img{height:clamp(420px, calc(100vh - 176px), 600px)}
+  .cover h1{font-size:clamp(40px,5.6vw,96px)}
+  .strip{grid-template-columns:repeat(4,minmax(0,1fr)); row-gap:32px}
+  .rec{grid-column:1 / span 8}
+  .rec-photo{grid-column:9 / span 4}
+  .kw{grid-column:1 / span 7}
+  .rate{grid-column:8 / span 5}
+}
+
+/* 표지를 세로로 쌓는 폭 */
+@media (max-width:900px){
+  .cover{grid-template-columns:minmax(0,1fr)}
+  .cover-text{display:contents}
+  .kicker{order:1}
+  .cover h1{order:2}
+  .cover-fig{order:3; margin-top:28px}
+  .cover-fig img{width:100%; max-width:560px; height:auto}
+  .cover-low{order:4; margin-top:40px}
+}
+
+/* ================= 모바일 ================= */
+@media (max-width:760px){
+  body{font-size:15px}
+  .brand{font-size:16px}
+  .brand img{width:32px}
+
+  .cover{padding-top:20px}
+  .cover h1{margin-top:12px; font-size:38px; line-height:1.15}
+  .cover-fig{margin:22px calc(var(--gut) * -1) 0}
+  .cover-fig img{max-width:none}
+  .cover-fig .cap{padding-inline:var(--gut)}
+
+  .fh{grid-template-columns:minmax(0,1fr)}
+  .fh-pl{padding-bottom:0}
+
+  .sp-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:32px 12px}
+  .sp-main{grid-column:1 / -1; margin-inline:calc(var(--gut) * -1)}
+  .sp-main .ph{flex:none; min-height:0; aspect-ratio:4 / 3}
+  .sp-main .cap{padding-inline:var(--gut)}
+  .sp-side{display:contents}
+  .sp-side .ph{aspect-ratio:1 / 1}
+  .sp-side .cap{flex-direction:column; align-items:flex-start; gap:8px}
+  .tally{margin-top:40px; gap:2px 12px}
+  .tally-n{font-size:52px}
+  .tally-s{flex-basis:100%}
+
+  .album{grid-template-columns:minmax(0,1fr); row-gap:56px}
+  .a05,.a06,.a07,.a08{grid-column:1 / -1}
+  .a05,.a08{margin-inline:calc(var(--gut) * -1)}
+  .a05 .ph{aspect-ratio:4 / 3}
+  .a05 .cap,.a08 .cap{padding-inline:var(--gut)}
+  .a06{width:72%; justify-self:end}
+  .a07{width:64%; justify-self:start}
+  .a09{margin-top:56px}
+  .a09 .ph{aspect-ratio:16 / 10}
+
+  .strip{display:flex; gap:12px; overflow-x:auto; overscroll-behavior-x:contain; scroll-snap-type:x mandatory; margin-inline:calc(var(--gut) * -1); padding:0 var(--gut) 8px; scroll-padding-inline:var(--gut)}
+  .strip .tr{flex:0 0 44%; scroll-snap-align:start}
+
+  .rec-wrap{grid-template-columns:minmax(0,1fr); row-gap:40px; margin-top:72px}
+  .rec,.rec-photo{grid-column:1 / -1}
+  .rec-list li{grid-template-columns:88px minmax(0,1fr); gap:12px; padding:18px 0}
+  .rank{font-size:68px}
+  .rank small{font-size:18px; margin-left:2px}
+  .rec-e{font-size:18px}
+  .rec-photo{width:64%}
+
+  .info-top{grid-template-columns:minmax(0,1fr); row-gap:56px}
+  .kw,.rate{grid-column:1 / -1}
+  .kw-list li{grid-template-columns:minmax(0,1fr) 44px; grid-template-areas:"k n" "b b"; gap:6px 10px; padding:12px 0}
+  .kw-k{grid-area:k}
+  .kw-n{grid-area:n}
+  .kw-bar{grid-area:b}
+  .rate-total b{font-size:52px}
+
+  .br-grid{grid-template-columns:minmax(0,1fr); grid-template-rows:none; row-gap:56px; margin-top:72px}
+  .br{grid-row:auto; grid-template-rows:none}
+  .price .n{font-size:54px}
+  .price.p-ask{font-size:36px}
+
+  .closing{flex-direction:column; align-items:stretch; margin-top:56px; padding:32px 0}
+  .closing .btn{width:100%}
+
+  .foot-in{grid-template-columns:minmax(0,1fr)}
+  .foot-brand,.foot-meta{grid-column:1 / -1}
+  .foot{padding-bottom:80px}
+
+  .sheet{width:100%; max-width:none; margin:auto 0 0; border-radius:12px 12px 0 0; max-height:88vh}
+  .ask-in{padding:20px 20px 28px}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#main" aria-label="로망휘트니스 처음으로">
+      <img src="assets/img/logo_symbol.png" alt="" width="600" height="400">
+      <span>로망휘트니스</span>
+    </a>
+    <button class="btn btn-main btn-sm" type="button" data-ask>수업 문의하기</button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===== 특집 01 · 표지 : 유일한 실제 수업 사진. 세로 원본 비율 그대로, 자르지 않는다. 다른 곳에서 반복하지 않는다. ===== -->
+<section class="wrap cover" aria-labelledby="cover-title">
+  <div class="cover-text">
+    <div>
+      <p class="kicker">로망휘트니스 사진집 · 2026년 11월</p>
+      <h1 class="cover-title" id="cover-title">함께 배우는<br>모습을 보세요.</h1>
+    </div>
+    <div class="cover-low">
+      <nav class="toc" aria-labelledby="toc-h">
+        <p class="toc-h" id="toc-h">차례</p>
+        <ol>
+          <li><a href="#f1"><span class="toc-n">01</span><span class="toc-t">함께 배우는 모습</span><span class="toc-p">도판 01</span></a></li>
+          <li><a href="#f2"><span class="toc-n">02</span><span class="toc-t">정돈된 공간</span><span class="toc-p">도판 02–04</span></a></li>
+          <li><a href="#f3"><span class="toc-n">03</span><span class="toc-t">운동하는 공간</span><span class="toc-p">도판 05–09</span></a></li>
+          <li><a href="#f4"><span class="toc-n">04</span><span class="toc-t">트레이너의 기록</span><span class="toc-p">도판 10–17</span></a></li>
+          <li><a href="#f5"><span class="toc-n">05</span><span class="toc-t">회원이 고른 말 · 이용 정보</span><span class="toc-p">평점 · 가격 · 지점</span></a></li>
+        </ol>
+      </nav>
+      <div class="cover-act">
+        <button class="btn btn-main" type="button" data-ask>수업 문의하기</button>
+      </div>
+    </div>
+  </div>
+  <figure class="cover-fig" id="f1">
+    <img src="assets/img/pj_tr_stretching.jpg" width="720" height="960" fetchpriority="high" decoding="sync"
+         alt="파주교하점에서 흰 맨투맨을 입은 형지민 트레이너가 무릎을 꿇고 앉아, 바닥에 누운 회원의 다리를 잡고 스트레칭을 돕고 있다. 뒤로 머신과 보라색 폼롤러가 보인다.">
+    <figcaption class="cap"><span class="pl" aria-hidden="true">01</span><span class="cap-t"><span class="sr">도판 01, </span><b>파주교하점</b> · 형지민 트레이너의 회원 스트레칭</span></figcaption>
+  </figure>
+</section>
+
+<!-- ===== 특집 02 · 정돈된 공간 : 작은 사진 2 + 큰 사진 1 (무인양품 특집 행). 도판 번호는 읽는 순서(왼쪽 위 → 아래 → 오른쪽 큰 사진). ===== -->
+<section class="feat" id="f2" aria-labelledby="f2-title">
+  <div class="wrap">
+    <header class="fh">
+      <p class="fh-no">특집 02</p>
+      <h2 id="f2-title">정돈된 공간</h2>
+      <p class="fh-pl">도판 02–04</p>
+    </header>
+
+    <div class="sp-grid">
+      <div class="sp-side">
+        <figure>
+          <div class="ph"><img src="assets/img/gc_machine_window.jpg" style="object-position:50% 62%" width="1800" height="1350" loading="lazy" decoding="sync"
+               alt="고척신정점 창가 머신존. 밝은 천장 조명 아래 흰색과 검은색 웨이트 머신이 창을 따라 놓여 있다."></div>
+          <figcaption class="cap"><span class="pl" aria-hidden="true">02</span><span class="cap-t"><span class="sr">도판 02, </span><b>고척신정점</b> · 창가 머신존</span></figcaption>
+        </figure>
+        <figure>
+          <div class="ph"><img src="assets/img/pj_machine_white.jpg" style="object-position:50% 100%" width="1800" height="1350" loading="lazy" decoding="sync"
+               alt="파주교하점 머신존. 검은 천장 아래 흰색과 검은색 플레이트 머신이 넓게 모여 있고, 오른쪽 바닥에 매트가 깔려 있다."></div>
+          <figcaption class="cap"><span class="pl" aria-hidden="true">03</span><span class="cap-t"><span class="sr">도판 03, </span><b>파주교하점</b> · 머신존</span></figcaption>
+        </figure>
+      </div>
+      <figure class="sp-main">
+        <div class="ph"><img src="assets/img/yd_stretch.jpg" style="object-position:50% 72%" width="1800" height="1350" loading="lazy" decoding="sync"
+             alt="영등포점 스트레칭존. 간접조명이 들어간 낮은 단 위에 검은 매트가 일렬로 놓여 있고, 오른쪽에 벤치가 있다."></div>
+        <figcaption class="cap l"><span class="pl" aria-hidden="true">04</span><span class="cap-t"><span class="sr">도판 04, </span><b>영등포점</b> · 스트레칭존</span></figcaption>
+      </figure>
+    </div>
+
+    <p class="tally">
+      <span class="tally-k">시설이 깔끔해요</span>
+      <span class="tally-n">843</span>
+      <span class="tally-s">네이버 리뷰 키워드, 세 지점 합계, 2026년 11월</span>
+    </p>
+  </div>
+</section>
+
+<!-- ===== 특집 03 · 운동하는 공간 : 도판 번호 + "지점 · 운동 종류" 캡션만 ===== -->
+<section class="feat" id="f3" aria-labelledby="f3-title">
+  <div class="wrap">
+    <header class="fh">
+      <p class="fh-no">특집 03</p>
+      <h2 id="f3-title">운동하는 공간</h2>
+      <p class="fh-pl">도판 05–09</p>
+    </header>
+
+    <div class="album">
+      <figure class="a05">
+        <div class="ph"><img src="assets/img/pj_cardio.jpg" style="object-position:50% 72%" width="1800" height="1350" loading="lazy" decoding="sync"
+             alt="파주교하점 창가 유산소 구역. 러닝머신이 창을 따라 늘어서 있고, 앞쪽에 실내 자전거와 노란 스피닝 자전거가 있다."></div>
+        <figcaption class="cap l"><span class="pl" aria-hidden="true">05</span><span class="cap-t"><span class="sr">도판 05, </span><b>파주교하점</b> · 유산소</span></figcaption>
+      </figure>
+      <figure class="a06">
+        <div class="ph"><img src="assets/img/yd_racks.jpg" style="object-position:57% 50%" width="1800" height="1350" loading="lazy" decoding="sync"
+             alt="영등포점 거울벽을 따라 줄지어 선 흰색 파워랙과 원판"></div>
+        <figcaption class="cap"><span class="pl" aria-hidden="true">06</span><span class="cap-t"><span class="sr">도판 06, </span><b>영등포점</b> · 파워랙</span></figcaption>
+      </figure>
+      <figure class="a07">
+        <div class="crop" style="--iw:1440;--cx:770;--cy:300;--cw:670;--ch:670"><img src="assets/img/gc_freeweight.jpg" width="1440" height="1080" decoding="sync"
+             alt="고척신정점 덤벨 랙. 바닥 LED 조명 위에 노란 로고가 있는 덤벨이 무게 순으로 놓여 있다."></div>
+        <figcaption class="cap"><span class="pl" aria-hidden="true">07</span><span class="cap-t"><span class="sr">도판 07, </span><b>고척신정점</b> · 덤벨</span></figcaption>
+      </figure>
+      <figure class="a08">
+        <div class="ph"><img src="assets/img/yd_machine.jpg" style="object-position:50% 100%" width="1800" height="1350" loading="lazy" decoding="sync"
+             alt="영등포점 머신존. 레일 조명 아래 플레이트 머신과 스미스 머신이 빽빽하게 놓여 있다."></div>
+        <figcaption class="cap l"><span class="pl" aria-hidden="true">08</span><span class="cap-t"><span class="sr">도판 08, </span><b>영등포점</b> · 머신</span></figcaption>
+      </figure>
+    </div>
+  </div>
+  <figure class="a09">
+    <div class="ph"><img src="assets/img/pj_stairs.jpg" style="object-position:50% 60%" width="1800" height="1350" loading="lazy" decoding="sync"
+         alt="파주교하점 창가에 나란히 놓인 천국의계단. 블라인드 사이로 햇빛이 들어오고 천장을 따라 조명 띠가 이어진다."></div>
+    <div class="wrap">
+      <figcaption class="cap l"><span class="pl" aria-hidden="true">09</span><span class="cap-t"><span class="sr">도판 09, </span><b>파주교하점</b> · 천국의계단</span></figcaption>
+    </div>
+  </figure>
+</section>
+
+<!-- ===== 특집 04 · 트레이너의 기록 : 세로 사진 띠 + 확인된 수상 기록 =====
+     프로필 사진은 스튜디오 촬영본 → 흑백, 얼굴과 어깨만 크롭. 수업 장면으로 교체 예정.
+     도판 17은 샘플 사진. 실제 인물·기록과 떨어뜨려 두고 이름을 붙이지 않는다. -->
+<section class="feat" id="f4" aria-labelledby="f4-title">
+  <div class="wrap">
+    <header class="fh">
+      <p class="fh-no">특집 04</p>
+      <h2 id="f4-title">트레이너의 기록</h2>
+      <p class="fh-pl">도판 10–17</p>
+    </header>
+
+    <p class="strip-note"><span class="tag">수업 장면으로 교체 예정</span>도판 10–16 프로필 사진</p>
+    <ul class="strip" aria-label="트레이너">
+      <li class="tr">
+        <div class="crop" style="--iw:783;--cx:235;--cy:0;--cw:330;--ch:440"><img src="assets/img/gc_tr_wonjung.jpg" width="783" height="1000" decoding="sync" alt="김원정 점장 프로필 사진"></div>
+        <p class="tr-cap"><span class="pl" aria-hidden="true">10</span><span class="tr-t"><b>김원정</b>점장 · 고척신정점<span class="aw">수상 1위</span></span></p>
+      </li>
+      <li class="tr">
+        <div class="crop" style="--iw:800;--cx:235;--cy:74;--cw:330;--ch:440"><img src="assets/img/gc_tr_wonwoo.jpg" width="800" height="1000" decoding="sync" alt="김원우 팀장 프로필 사진"></div>
+        <p class="tr-cap"><span class="pl" aria-hidden="true">11</span><span class="tr-t"><b>김원우</b>팀장 · 고척신정점<span class="aw">수상 1위</span></span></p>
+      </li>
+      <li class="tr">
+        <div class="crop" style="--iw:800;--cx:285;--cy:110;--cw:270;--ch:360"><img src="assets/img/gc_tr_myeonggi.jpg" width="800" height="1000" decoding="sync" alt="이명기 트레이너 프로필 사진"></div>
+        <p class="tr-cap"><span class="pl" aria-hidden="true">12</span><span class="tr-t"><b>이명기</b>트레이너 · 고척신정점<span class="aw">수상 1위</span></span></p>
+      </li>
+      <li class="tr">
+        <div class="crop" style="--iw:800;--cx:270;--cy:50;--cw:360;--ch:480"><img src="assets/img/yd_tr_son.jpg" width="800" height="1000" decoding="sync" alt="손주환 대표 프로필 사진"></div>
+        <p class="tr-cap"><span class="pl" aria-hidden="true">13</span><span class="tr-t"><b>손주환</b>대표 · 영등포점</span></p>
+      </li>
+      <li class="tr">
+        <div class="crop" style="--iw:655;--cx:115;--cy:0;--cw:420;--ch:560"><img src="assets/img/yd_tr_park.jpg" width="655" height="961" decoding="sync" alt="박강훈 지점장 프로필 사진"></div>
+        <p class="tr-cap"><span class="pl" aria-hidden="true">14</span><span class="tr-t"><b>박강훈</b>지점장 · 영등포점</span></p>
+      </li>
+      <li class="tr">
+        <div class="crop" style="--iw:801;--cx:200;--cy:40;--cw:330;--ch:440"><img src="assets/img/yd_tr_lee.jpg" width="801" height="1000" decoding="sync" alt="이상혁 수석 트레이너 프로필 사진"></div>
+        <p class="tr-cap"><span class="pl" aria-hidden="true">15</span><span class="tr-t"><b>이상혁</b>수석 트레이너 · 영등포점</span></p>
+      </li>
+      <li class="tr">
+        <div class="crop" style="--iw:800;--cx:260;--cy:76;--cw:420;--ch:560"><img src="assets/img/yd_tr_bae.jpg" width="800" height="1000" decoding="sync" alt="배현욱 수석 트레이너 프로필 사진"></div>
+        <p class="tr-cap"><span class="pl" aria-hidden="true">16</span><span class="tr-t"><b>배현욱</b>수석 트레이너 · 영등포점<span class="aw">수상 2위</span></span></p>
+      </li>
+    </ul>
+    <p class="strip-more"><b>함께 일하는 트레이너</b> — 영등포점 윤지민 · 파주교하점 이광영, 형지민(도판 01), 오소연, 임지민</p>
+
+    <div class="rec-wrap">
+      <div class="rec">
+        <h3 class="sub-h">대회 수상 기록</h3>
+        <ol class="rec-list">
+          <li><p class="rank">1<small>위</small></p><div><p class="rec-e">PCA 클래식보디빌딩 체급</p><p class="rec-m">2023 · 이명기 트레이너 · 고척신정점</p></div></li>
+          <li><p class="rank">1<small>위</small></p><div><p class="rec-e">태권도 겨루기 아시아대회</p><p class="rec-m">김원정 점장 · 고척신정점<span class="chk" title="대회 연도와 대회 정식 이름을 받아 주세요.">확인 필요</span></p></div></li>
+          <li><p class="rank">1<small>위</small></p><div><p class="rec-e">러시아 오픈 태권도 단체 겨루기</p><p class="rec-m">김원우 팀장 · 고척신정점<span class="chk" title="대회 연도를 받아 주세요.">확인 필요</span></p></div></li>
+          <li><p class="rank">2<small>위</small></p><div><p class="rec-e">WNGP 의정부 보디빌딩 오픈</p><p class="rec-m">배현욱 수석 트레이너 · 영등포점<span class="chk" title="대회 연도와 출전 종목을 받아 주세요.">확인 필요</span></p></div></li>
+        </ol>
+      </div>
+      <figure class="rec-photo">
+        <div class="crop" style="--iw:1920;--cx:590;--cy:236;--cw:480;--ch:640"><img src="assets/img/sample/sample_ramon_dino_trophy.jpg" width="1920" height="1440" decoding="sync" alt="보디빌딩 트로피를 쥔 손. 레이아웃 확인용 샘플 사진"><span class="stamp">샘플 · 교체 예정</span></div>
+        <figcaption class="cap"><span class="pl" aria-hidden="true">17</span><span class="cap-t"><span class="sr">도판 17, </span><b>트로피</b> · 샘플 사진, 위 기록과 무관</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 특집 05 · 회원이 고른 말 · 이용 정보 (화보 끝 정보 페이지) ===== -->
+<section class="feat" id="f5" aria-labelledby="f5-title">
+  <div class="wrap">
+    <header class="fh">
+      <p class="fh-no">특집 05</p>
+      <h2 id="f5-title">회원이 고른 말 · 이용 정보</h2>
+      <p class="fh-pl">네이버 플레이스 2026년 11월 기준</p>
+    </header>
+
+    <div class="info-top">
+      <div class="kw">
+        <h3 class="sub-h">리뷰에서 가장 많이 고른 말</h3>
+        <p class="src">세 지점 합계</p>
+        <ol class="kw-list">
+          <li><span class="kw-k">시설이 깔끔해요</span><span class="kw-bar" aria-hidden="true"><i style="--v:843"></i></span><span class="kw-n">843</span></li>
+          <li><span class="kw-k">친절해요</span><span class="kw-bar" aria-hidden="true"><i style="--v:819"></i></span><span class="kw-n">819</span></li>
+          <li><span class="kw-k">기구가 다양해요</span><span class="kw-bar" aria-hidden="true"><i style="--v:757"></i></span><span class="kw-n">757</span></li>
+          <li><span class="kw-k">가격이 합리적이에요</span><span class="kw-bar" aria-hidden="true"><i style="--v:601"></i></span><span class="kw-n">601</span></li>
+          <li><span class="kw-k">공간이 넓어요</span><span class="kw-bar" aria-hidden="true"><i style="--v:438"></i></span><span class="kw-n">438</span></li>
+        </ol>
+      </div>
+      <div class="rate">
+        <h3 class="sub-h">네이버 방문자 평점</h3>
+        <p class="rate-total"><b>4.93</b><span>세 지점 평균 · 리뷰 1,168건</span></p>
+        <ul class="rate-list">
+          <li><a href="https://m.place.naver.com/place/1613655457/home" target="_blank" rel="noopener" aria-label="고척신정점 평점 4.81점, 리뷰 435건, 네이버에서 보기"><span class="rate-b">고척신정점</span><span class="rate-n">4.81</span><span class="rate-c">리뷰 435건</span></a></li>
+          <li><a href="https://m.place.naver.com/place/1856428130/home" target="_blank" rel="noopener" aria-label="영등포점 평점 5.0점, 리뷰 241건, 네이버에서 보기"><span class="rate-b">영등포점</span><span class="rate-n">5.0</span><span class="rate-c">리뷰 241건</span></a></li>
+          <li><a href="https://m.place.naver.com/place/1337216446/home" target="_blank" rel="noopener" aria-label="파주교하점 평점 5.0점, 리뷰 492건, 네이버에서 보기"><span class="rate-b">파주교하점</span><span class="rate-n">5.0</span><span class="rate-c">리뷰 492건</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="br-grid">
+      <article class="br" aria-labelledby="b-gc">
+        <div class="br-head"><h3 class="br-name" id="b-gc">고척신정점</h3><p class="br-stn">2호선 양천구청역</p></div>
+        <div>
+          <span class="k">이용료</span>
+          <p class="price"><span class="u">월</span><span class="n">35,000</span><span class="u">원</span></p>
+          <p class="p-b">헬스 12개월 420,000원 기준 · 등록 시 PT 1회 무료</p>
+        </div>
+        <div><span class="k">주소</span><p class="v">서울 구로구 중앙로14길 31 신성빌딩 5층</p></div>
+        <div><span class="k">주차</span><p class="v">건물 지하 무료, 시간 제한 없음<br><span class="foot-small">입구 양천구 목동남로 28</span></p></div>
+        <div><span class="k">운영시간</span><p class="v">평일 06:00–23:00<br>토 06:00–19:00<span class="chk" title="네이버 플레이스엔 토요일 10:00 오픈으로 나와요. 지점에 확인해 주세요.">확인 필요</span><br>일·공휴일 10:00–19:00<br>연중무휴</p></div>
+        <div><span class="k">연락</span>
+          <p class="links"><a href="tel:050714591054">전화 0507-1459-1054</a><a href="https://talk.naver.com/w441n8" target="_blank" rel="noopener">톡톡</a><a href="http://pf.kakao.com/_yNIgG" target="_blank" rel="noopener">카카오톡</a><a href="https://map.naver.com/p/entry/place/1613655457" target="_blank" rel="noopener">지도</a></p>
+        </div>
+      </article>
+
+      <article class="br" aria-labelledby="b-yd">
+        <div class="br-head"><h3 class="br-name" id="b-yd">영등포점</h3><p class="br-stn">1·2호선 신도림역 2번 출구, 걸어서 약 13분</p></div>
+        <div>
+          <span class="k">이용료</span>
+          <p class="price p-ask">상담 시 안내</p>
+          <p class="p-b">공식 가격표 비공개 · 등록 시 PT 2회 무료</p>
+        </div>
+        <div><span class="k">주소</span><p class="v">서울 영등포구 도영로 50 3층<br><span class="foot-small">도림시장·하나로마트 건물</span></p></div>
+        <div><span class="k">주차</span><p class="v"><span class="no">지원 안 함</span></p></div>
+        <div><span class="k">운영시간</span><p class="v">월 06:00–24:00<span class="chk" title="지점 소개 페이지엔 월요일 23:00 마감으로 나와요. 지점에 확인해 주세요.">확인 필요</span><br>화–금 24시간<br>토 00:00–21:00 · 일 10:00–21:00<br>1·3·5주 일요일 휴무</p></div>
+        <div><span class="k">연락</span>
+          <p class="links"><a href="tel:050713835663">전화 0507-1383-5663</a><a href="https://talk.naver.com/w5u3yj" target="_blank" rel="noopener">톡톡</a><a href="https://m.booking.naver.com/booking/13/bizes/1249375" target="_blank" rel="noopener">네이버 예약</a><a href="https://map.naver.com/p/entry/place/1856428130" target="_blank" rel="noopener">지도</a></p>
+        </div>
+      </article>
+
+      <article class="br" aria-labelledby="b-pj">
+        <div class="br-head"><h3 class="br-name" id="b-pj">파주교하점</h3><p class="br-stn">GTX-A 운정중앙역</p></div>
+        <div>
+          <span class="k">이용료</span>
+          <p class="price"><span class="u">월</span><span class="n">33,333</span><span class="u">원부터</span></p>
+          <p class="p-b">알뜰 12개월 400,000원 기준 · 일일권 19,800원</p>
+        </div>
+        <div><span class="k">주소</span><p class="v">경기 파주시 책향기로 419 웰스피아빌딩 8층<br><span class="foot-small">롯데리아 건물</span></p></div>
+        <div><span class="k">주차</span><p class="v">건물 지하 3시간 무료</p></div>
+        <div><span class="k">운영시간</span><p class="v">월 06:00 오픈<br>화–금 24시간<br>토 00:00–18:00 · 일·공휴일 10:00–18:00<br>1·3·5주 일요일 휴무</p></div>
+        <div><span class="k">연락</span>
+          <p class="links"><a href="tel:050713149178">전화 0507-1314-9178</a><a href="https://talk.naver.com/w4dobq" target="_blank" rel="noopener">톡톡</a><a href="http://pf.kakao.com/_Fxamxmxj" target="_blank" rel="noopener">카카오톡</a><a href="https://map.naver.com/p/entry/place/1337216446" target="_blank" rel="noopener">지도</a></p>
+        </div>
+      </article>
+    </div>
+
+    <p class="fine">월 금액은 12개월 회원권 금액을 12로 나눈 값이에요. 부가세 포함 여부<span class="chk" title="부가세 포함 금액인지 별도인지 지점에 확인해 주세요. 별도라면 결제 금액이 10% 더 많아요.">확인 필요</span> · 환불 기준·보증보험<span class="chk" title="지점별 환불 기준과 회원권 보증보험 가입 여부를 받아 주세요.">확인 필요</span></p>
+
+    <div class="closing">
+      <p class="closing-t">가까운 지점을 골라 주세요.</p>
+      <p class="closing-s">전화 · 톡톡 · 카카오톡 · 네이버 예약으로 연결돼요</p>
+      <button class="btn btn-main" type="button" data-ask>수업 문의하기</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== 판권면 ===== -->
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <a class="brand" href="#main" aria-label="로망휘트니스 처음으로"><img src="assets/img/logo_symbol.png" alt="" width="600" height="400" loading="lazy"><span>로망휘트니스</span></a>
+      <p class="foot-small">사진집 · 2026년 11월 · 도판 17점</p>
+    </div>
+    <div class="foot-meta">
+      <p>상호 로망휘트니스 · 대표 김의겸</p>
+      <p>사업자등록번호 <span class="nw">고척신정점 102-06-94392</span> · <span class="nw">파주교하점 680-18-01829</span> · <span class="nw">영등포점 미기재</span><span class="chk" title="영등포점 사업자등록번호를 받아 주세요.">확인 필요</span></p>
+      <p class="foot-small">평점·리뷰 수·가격은 네이버 플레이스 2026년 11월 기준이에요.</p>
+      <p class="foot-small">도판 10–16 트레이너 프로필 사진은 스튜디오 촬영본으로, 수업 장면으로 교체 예정이에요. 도판 17은 레이아웃 확인용 샘플 사진이에요 — 위키미디어 커먼즈, FotografoWallacyFerrari, CC BY 4.0.</p>
+    </div>
+  </div>
+</footer>
+
+<p class="draft" aria-hidden="true">시안 J</p>
+
+<dialog class="sheet" id="ask" aria-labelledby="ask-title">
+  <div class="ask-in">
+    <div class="ask-head">
+      <div>
+        <h2 class="ask-title" id="ask-title">어느 지점에 문의할까요?</h2>
+        <p class="ask-sub">수업 시간과 가격, 처음이라는 것만 말씀해 주세요.</p>
+      </div>
+      <button class="ask-x" type="button" data-close>닫기</button>
+    </div>
+    <ul class="ask-list">
+      <li>
+        <p class="ask-b"><b>고척신정점</b><span>2호선 양천구청역</span></p>
+        <p class="ask-acts">
+          <a class="btn btn-line" href="tel:050714591054">전화 0507-1459-1054</a>
+          <a class="btn btn-line" href="https://talk.naver.com/w441n8" target="_blank" rel="noopener">톡톡</a>
+          <a class="btn btn-line" href="http://pf.kakao.com/_yNIgG" target="_blank" rel="noopener">카카오톡</a>
+        </p>
+      </li>
+      <li>
+        <p class="ask-b"><b>영등포점</b><span>1·2호선 신도림역</span></p>
+        <p class="ask-acts">
+          <a class="btn btn-line" href="tel:050713835663">전화 0507-1383-5663</a>
+          <a class="btn btn-line" href="https://talk.naver.com/w5u3yj" target="_blank" rel="noopener">톡톡</a>
+          <a class="btn btn-line" href="https://m.booking.naver.com/booking/13/bizes/1249375" target="_blank" rel="noopener">네이버 예약</a>
+        </p>
+      </li>
+      <li>
+        <p class="ask-b"><b>파주교하점</b><span>GTX-A 운정중앙역</span></p>
+        <p class="ask-acts">
+          <a class="btn btn-line" href="tel:050713149178">전화 0507-1314-9178</a>
+          <a class="btn btn-line" href="https://talk.naver.com/w4dobq" target="_blank" rel="noopener">톡톡</a>
+          <a class="btn btn-line" href="http://pf.kakao.com/_Fxamxmxj" target="_blank" rel="noopener">카카오톡</a>
+        </p>
+      </li>
+    </ul>
+  </div>
+</dialog>
+
+<script>
+(function(){
+  "use strict";
+  var sheet = document.getElementById("ask");
+  var opener = null;
+  function open(btn){
+    opener = btn;
+    if(typeof sheet.showModal === "function") sheet.showModal(); else sheet.setAttribute("open","");
+  }
+  function close(){
+    if(typeof sheet.close === "function") sheet.close(); else { sheet.removeAttribute("open"); if(opener) opener.focus(); }
+  }
+  document.querySelectorAll("[data-ask]").forEach(function(btn){
+    btn.addEventListener("click", function(){ open(btn); });
+  });
+  sheet.addEventListener("click", function(e){
+    if(e.target === sheet || e.target.closest("[data-close]")) close();
+  });
+  sheet.addEventListener("close", function(){ if(opener) opener.focus(); });
+  /* 검토용: ?sheet=1 로 열면 지점 시트가 바로 열려요. */
+  if(/[?&]sheet=1/.test(location.search)) open(document.querySelector("[data-ask]"));
+})();
+</script>
+</body>
+</html>

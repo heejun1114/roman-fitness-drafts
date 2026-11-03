@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>로망휘트니스 | 두 지점 나란히</title>
+<meta name="description" content="로망휘트니스 고척신정점, 영등포점, 파주교하점 중 두 곳을 같은 기준의 사진과 조건으로 나란히 비교해 보세요.">
+<meta name="theme-color" content="#EDF4FB">
+<link rel="icon" href="assets/img/logo_symbol.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+/* 색 규칙
+   바탕 --bg, 카드 흰색, 글자 --ink(남색).
+   로즈는 두 군데만: 주 버튼(--rose-deep 채움 + 흰 글자)과 '더 유리한 쪽' 표식(--rose 얇은 선).
+   흰 바탕 위 로즈 글자는 --rose-deep만 쓴다(5.8:1). */
+:root{
+  --bg:#EDF4FB; --card:#FFFFFF; --tint:#F3F7FC;
+  --ink:#203A57; --ink-2:#4A5D74; --ink-3:#5E7088;
+  --rule:#D6E2EF; --rule-2:#E6EDF5;
+  --rose:#EB798A; --rose-deep:#B83A55; --rose-wash:#FDEEF1;
+  --l1:#263C96; --l2:#2F9A3D; --gtx:#905A89;
+  --font:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+  --wrap:1200px; --gut:40px; --cg:24px; --hh:64px; --pb:52px; --r:16px; --pad:24px;
+}
+@media (max-width:760px){
+  :root{ --gut:14px; --cg:8px; --hh:56px; --pb:46px; --r:12px; --pad:12px; }
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:calc(var(--hh) + var(--pb) + 16px)}
+@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} }
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--font); font-size:16px; line-height:1.6; letter-spacing:-0.01em;
+  word-break:keep-all; overflow-wrap:break-word; -webkit-font-smoothing:antialiased;
+}
+img{display:block; max-width:100%; height:auto}
+a{color:inherit; text-underline-offset:3px}
+h1,h2,h3,h4,p,ul,ol,dl,dd,figure{margin:0}
+ul,ol{padding:0; list-style:none}
+button{font:inherit; color:inherit}
+:focus-visible{outline:3px solid var(--rose-deep); outline-offset:2px; border-radius:6px}
+.sr{position:absolute!important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0}
+.skip{position:absolute; left:12px; top:-60px; z-index:100; padding:10px 14px; border-radius:8px; background:var(--ink); color:#fff; font-weight:600; text-decoration:none}
+.skip:focus{top:12px}
+.wrap{max-width:calc(var(--wrap) + var(--gut)*2); margin-inline:auto; padding-inline:var(--gut)}
+.num{font-weight:700; font-variant-numeric:tabular-nums}
+
+/* 확인 필요 칩: 점선 테두리. title에 확인할 내용 */
+.todo{
+  display:inline-block; margin-left:4px; padding:0 6px; border:1px dashed #A07A1C; border-radius:4px;
+  background:#FFF8E6; color:#7A5500; font-size:11px; font-weight:600; line-height:17px; letter-spacing:0;
+  vertical-align:1px; white-space:nowrap; cursor:help;
+}
+.stamp{position:absolute; z-index:3; padding:2px 8px; border-radius:6px; background:rgba(16,30,48,.74); color:#fff; font-size:11px; font-weight:600; line-height:1.6; letter-spacing:0; pointer-events:none}
+.tag{display:inline-block; padding:1px 8px; border-radius:6px; background:var(--tint); color:var(--ink-2); font-size:11.5px; font-weight:600; line-height:1.7; letter-spacing:0; white-space:nowrap}
+.draft-mark{position:fixed; left:10px; bottom:10px; z-index:60; padding:5px 8px; border-radius:6px; background:var(--card); border:1px solid var(--rule); color:var(--ink-2); font-size:12px; font-weight:600; line-height:1; pointer-events:none}
+
+/* 노선 배지 */
+.stn{display:inline-flex; align-items:center; gap:6px; white-space:nowrap}
+.lns{display:inline-flex; gap:2px}
+.ln{display:inline-grid; place-items:center; min-width:20px; height:20px; padding:0 5px; border-radius:10px; color:#fff; font-size:12px; font-weight:800; font-style:normal; line-height:1}
+.ln-1{background:var(--l1)} .ln-2{background:var(--l2)} .ln-gtx{background:var(--gtx); font-size:10.5px; padding:0 6px}
+
+/* 순위 배지 */
+.rk{display:inline-grid; place-items:center; flex:none; width:34px; height:34px; border-radius:50%; background:var(--rose-deep); color:#fff; font-size:12px; font-weight:700; letter-spacing:-0.03em}
+.rk.r2{background:var(--card); color:var(--rose-deep); box-shadow:inset 0 0 0 1.5px var(--rose-deep)}
+
+/* 버튼: 주(로즈 채움) / 보조(남색 테두리) 두 단계 */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  min-height:52px; padding:0 22px; border-radius:12px; border:1.5px solid var(--ink);
+  background:var(--card); color:var(--ink); font-size:16px; font-weight:700; line-height:1.25;
+  text-decoration:none; text-align:center; cursor:pointer;
+}
+.btn:hover{background:var(--tint)}
+.btn-primary{background:var(--rose-deep); border-color:var(--rose-deep); color:#fff}
+.btn-primary:hover{background:#A3304A; border-color:#A3304A}
+.btn-wide{width:100%}
+.link{background:none; border:0; padding:0; color:var(--ink); font-size:14px; font-weight:600; text-decoration:underline; text-decoration-color:var(--rule); text-decoration-thickness:2px; text-underline-offset:5px; cursor:pointer; min-height:44px; display:inline-flex; align-items:center}
+.link:hover{text-decoration-color:var(--ink)}
+
+/* ===== 머리글 ===== */
+.top{position:sticky; top:0; z-index:50; background:#fff; border-bottom:1px solid var(--rule)}
+.top-in{display:flex; align-items:center; gap:28px; height:var(--hh)}
+.brand{display:flex; align-items:center; gap:8px; min-height:44px; text-decoration:none; flex:none}
+.foot .brand{display:inline-flex}
+.brand-sym{width:45px; height:30px; object-fit:contain}
+.brand-word{width:124px; height:31px; object-fit:contain; filter:invert(1)}
+.nav{display:flex; gap:22px; margin-left:auto}
+.nav a{font-size:15px; font-weight:500; color:var(--ink-2); text-decoration:none; padding:8px 0}
+.nav a:hover{color:var(--ink); text-decoration:underline}
+.top .btn{min-height:42px; padding:0 16px; font-size:14px; border-radius:10px}
+@media (max-width:1000px){ .nav{display:none} .top .btn{margin-left:auto} }
+@media (max-width:760px){
+  .brand-sym{width:39px; height:26px}
+  .brand-word{width:104px; height:26px}
+  .top .btn{min-height:44px; padding:0 12px; font-size:13.5px}
+}
+
+/* ===== 신뢰 줄: 수상 4건 ===== */
+.trust{background:var(--card); border-bottom:1px solid var(--rule)}
+.trust-in{display:flex; align-items:center; gap:26px; min-height:68px}
+.trust-k{display:flex; align-items:baseline; gap:3px; flex:none; font-size:14px; font-weight:700; color:var(--ink-2)}
+.trust-k b{font-size:30px; line-height:1; color:var(--ink); margin-left:5px}
+.trust-list{display:flex; gap:24px; flex:1; min-width:0}
+.trust-list li{display:flex; align-items:center; gap:9px; flex:none}
+.trust-list .tt b{display:block; font-size:13.5px; font-weight:700; line-height:1.35; white-space:nowrap}
+.trust-list .tt small{display:block; font-size:12px; color:var(--ink-2); line-height:1.45; white-space:nowrap}
+@media (max-width:1180px){
+  .trust-list{overflow-x:auto; scrollbar-width:none; padding:8px 0}
+  .trust-list::-webkit-scrollbar{display:none}
+}
+@media (max-width:760px){
+  .trust-in{gap:14px; min-height:60px}
+  .trust-k{flex-direction:column; align-items:flex-start; gap:0; font-size:11.5px; line-height:1.3}
+  .trust-k b{font-size:22px; margin-left:0}
+  .trust-list{gap:16px; margin-right:calc(var(--gut) * -1); padding-right:var(--gut)}
+  .trust-list .rk{width:28px; height:28px; font-size:10.5px}
+  .trust-list .tt b{font-size:12.5px}
+  .trust-list .tt small{font-size:11px}
+}
+
+/* ===== 비교 격자 (모든 비교 구간 공통) =====
+   카드 하나가 여러 행을 차지하고 subgrid로 같은 행끼리 높이를 맞춘다. */
+.cmp{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:var(--cg); row-gap:0; position:relative}
+.card{background:var(--card); border-radius:var(--r); min-width:0; box-shadow:0 1px 2px rgba(32,58,87,.06)}
+.cmp > .card{display:grid; grid-row:span var(--rows,1); grid-template-rows:subgrid; overflow:hidden}
+.cell{position:relative; min-width:0; padding:16px var(--pad); border-top:1px solid var(--rule-2)}
+.cell-k{display:block; margin-bottom:3px; font-size:13px; font-weight:600; color:var(--ink-3); line-height:1.4}
+.cell-v{font-size:16px; font-weight:600; line-height:1.45}
+.cell-s{margin-top:2px; font-size:14px; color:var(--ink-2); line-height:1.5}
+/* 더 유리한 쪽 표식 */
+.cell.plus::before{content:""; position:absolute; left:0; top:14px; bottom:14px; width:4px; border-radius:0 4px 4px 0; background:var(--rose)}
+.cell.plus .cell-k{color:var(--rose-deep)}
+.legend{display:inline-flex; align-items:center; gap:7px; font-size:13px; color:var(--ink-2)}
+.legend i{width:4px; height:18px; border-radius:2px; background:var(--rose)}
+.chead{display:flex; align-items:center; gap:12px; padding:14px var(--pad); border-top:0}
+.chead img{width:46px; height:46px; flex:none; border-radius:10px; object-fit:cover}
+.chead h3{font-size:18px; font-weight:700; letter-spacing:-0.02em; line-height:1.3}
+.chead .stn{font-size:13px; color:var(--ink-2); font-weight:500}
+@media (max-width:760px){
+  .cell{padding:12px var(--pad)}
+  .cell-k{font-size:12px}
+  .cell-v{font-size:14px}
+  .cell-s{font-size:12.5px}
+  .cell.plus::before{width:3px; top:10px; bottom:10px}
+  .chead{gap:8px; padding:10px var(--pad)}
+  .chead img{width:34px; height:34px; border-radius:8px}
+  .chead h3{font-size:15px}
+  .chead .stn{display:none}
+}
+
+/* ===== 1. 히어로: 사진 두 장 + 큰 숫자 ===== */
+.hero{padding-top:30px}
+.hero-head{display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:10px 24px; margin-bottom:22px}
+.hero-title{font-size:clamp(25px,3vw,42px); font-weight:800; letter-spacing:-0.045em; line-height:1.18}
+.basis{display:flex; flex-wrap:wrap; align-items:center; gap:6px; font-size:13px; color:var(--ink-2)}
+.basis > b{font-weight:700; color:var(--ink); margin-right:2px}
+.basis > span{padding:3px 10px; border-radius:999px; background:var(--card); border:1px solid var(--rule); white-space:nowrap}
+
+.hcol{--rows:3}
+.hshot{position:relative; aspect-ratio:1.4; overflow:hidden; background:#17263A}
+.hshot > img{width:100%; height:100%; object-fit:cover; object-position:var(--p,50% 50%)}
+.hshot::after{content:""; position:absolute; inset:0; pointer-events:none;
+  background:linear-gradient(to top, rgba(12,24,40,.9) 0%, rgba(12,24,40,.62) 30%, rgba(12,24,40,0) 60%)}
+.hshot-stn{position:absolute; left:16px; top:16px; z-index:2; padding:5px 11px 5px 6px; border-radius:999px; background:rgba(255,255,255,.95); font-size:13px; font-weight:700}
+.hover{position:absolute; left:0; right:0; bottom:0; z-index:2; padding:22px 28px 22px; color:#fff}
+.hname{font-size:22px; font-weight:700; letter-spacing:-0.02em; line-height:1.3}
+.hsize{display:flex; align-items:baseline; flex-wrap:wrap; column-gap:6px; margin-top:4px; line-height:1}
+.hsize .k{font-size:26px; font-weight:700}
+.hsize .v{font-size:clamp(40px,7.4vw,108px); font-weight:700; letter-spacing:-0.04em; font-variant-numeric:tabular-nums}
+.hsize .u{font-size:30px; font-weight:700; letter-spacing:-0.02em}
+.hrate{display:flex; align-items:baseline; flex-wrap:wrap; gap:0 6px; margin-top:12px; font-size:17px; line-height:1.4}
+.hrate .star{color:var(--rose); font-size:18px}
+.hrate .sep{opacity:.6}
+.hchips{display:flex; flex-wrap:wrap; align-content:flex-start; gap:8px; padding:16px 20px 0}
+.hchips li{display:inline-flex; align-items:center; gap:7px; padding:4px 12px 4px 4px; border-radius:999px; background:var(--tint); font-size:13.5px; font-weight:600; line-height:1.35}
+.hchips li.plain{padding:6px 12px}
+.hchips .rk{width:26px; height:26px; font-size:10.5px}
+.hact{padding:16px 20px 20px}
+.bridge{position:absolute; left:50%; top:-15px; z-index:4; transform:translateX(-50%);
+  display:inline-flex; align-items:center; gap:6px; padding:5px 12px 5px 6px; border-radius:999px;
+  background:var(--ink); color:#fff; font-size:13px; font-weight:700; white-space:nowrap; box-shadow:0 2px 8px rgba(16,30,48,.2)}
+.bridge[hidden]{display:none}
+
+@media (max-width:760px){
+  .hero{padding-top:20px}
+  .hero-head{margin-bottom:22px; gap:10px}
+  .basis{font-size:12px}
+  .basis > span{padding:2px 9px}
+  .hshot{aspect-ratio:3/4}
+  .hshot > img{object-position:var(--pm, var(--p, 50% 50%))}
+  .hshot-stn{left:7px; top:16px; padding:3px 8px 3px 4px; font-size:11px}
+  .hshot-stn .ln{min-width:17px; height:17px; font-size:10.5px; padding:0 4px}
+  .hshot-stn .ln-gtx{font-size:9px}
+  .hover{padding:10px 10px 12px}
+  .hname{font-size:15px}
+  .hsize{column-gap:3px; margin-top:2px}
+  .hsize .k{font-size:14px}
+  .hsize .v{font-size:44px}
+  .hsize .u{font-size:15px}
+  .hrate{margin-top:6px; font-size:12.5px; gap:0 4px}
+  .hrate .star{font-size:13px}
+  .hchips{gap:5px; padding:10px 8px 0}
+  .hchips li{gap:5px; padding:3px 8px 3px 3px; font-size:11.5px}
+  .hchips li.plain{padding:4px 8px}
+  .hchips .rk{width:21px; height:21px; font-size:9px}
+  .hact{padding:10px 8px 10px}
+  .hact .btn{min-height:50px; padding:0 6px; font-size:13.5px; border-radius:10px}
+  .bridge{top:-13px; font-size:11.5px; padding:3px 9px 3px 4px}
+  .bridge .ln{min-width:17px; height:17px; font-size:10.5px}
+}
+
+/* 비교 지점 바꾸기 */
+.switch{display:flex; align-items:center; gap:14px 22px; margin-top:20px; padding:14px 16px 14px 22px; border-radius:var(--r); background:var(--card); box-shadow:0 1px 2px rgba(32,58,87,.06)}
+.switch-k{flex:none; font-size:16px; font-weight:700}
+.pairs{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; flex:1; min-width:0}
+.pair{display:flex; align-items:center; gap:12px; min-height:60px; padding:8px 14px 8px 10px; border-radius:12px; border:1.5px solid var(--rule); background:var(--card); text-align:left; cursor:pointer}
+.pair:hover{border-color:var(--ink-3)}
+.pair[aria-pressed="true"]{border-color:var(--ink); background:var(--tint); box-shadow:inset 0 0 0 1px var(--ink)}
+.pair-thumbs{display:flex; flex:none}
+.pair-thumbs img{width:38px; height:38px; border-radius:50%; object-fit:cover; border:2px solid var(--card)}
+.pair-thumbs img + img{margin-left:-12px}
+.pair-names{display:flex; flex-wrap:wrap; column-gap:5px; font-size:14.5px; font-weight:700; line-height:1.35}
+.pair-names i{font-style:normal; color:var(--ink-3); font-weight:500}
+.pair-on{display:none; margin-left:auto; font-size:12px; font-weight:700; color:var(--ink); white-space:nowrap}
+.pair[aria-pressed="true"] .pair-on{display:inline}
+@media (max-width:900px){
+  .switch{flex-direction:column; align-items:stretch; padding:12px}
+  .pair-on{display:none!important}
+}
+@media (max-width:760px){
+  .switch-k{font-size:14px}
+  .pairs{gap:6px}
+  .pair{flex-direction:column; align-items:center; gap:6px; min-height:0; padding:8px 4px; text-align:center}
+  .pair-thumbs img{width:30px; height:30px}
+  .pair-thumbs img + img{margin-left:-9px}
+  .pair-names{flex-direction:column; font-size:12.5px; line-height:1.3}
+  .pair-names i{display:none}
+}
+
+/* 고정 지점 이름 띠: 아래 모든 비교 구간의 열 이름 */
+.pairbar{position:fixed; left:0; right:0; top:var(--hh); z-index:45; background:rgba(237,244,251,.95); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px); border-bottom:1px solid var(--rule)}
+.pairbar[hidden]{display:none}
+.pairbar .cmp{height:var(--pb); align-items:center}
+.pb-cell{display:flex; align-items:center; gap:10px; min-width:0}
+.pb-cell img{width:30px; height:30px; flex:none; border-radius:50%; object-fit:cover}
+.pb-cell b{font-size:15px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.pb-cell .stn{font-size:13px; color:var(--ink-2); font-weight:500}
+@media (max-width:760px){
+  .pb-cell{gap:6px}
+  .pb-cell img{width:24px; height:24px}
+  .pb-cell b{font-size:13.5px}
+  .pb-cell .stn{display:none}
+}
+
+/* ===== 섹션 공통 ===== */
+.sec{padding-top:88px}
+.sh{display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:10px 24px; margin-bottom:22px}
+.sh-title{font-size:clamp(24px,2.4vw,34px); font-weight:800; letter-spacing:-0.04em; line-height:1.2}
+.sh-aux{display:flex; flex-wrap:wrap; align-items:center; gap:6px 14px; font-size:13px; color:var(--ink-2)}
+@media (max-width:760px){
+  .sec{padding-top:56px}
+  .sh{margin-bottom:16px}
+  .sh-aux{font-size:12px; gap:6px 10px}
+}
+
+/* ===== 2. 회원권 ===== */
+.pcol{--rows:7}
+.pbig .cell-v{display:flex; align-items:baseline; flex-wrap:wrap; column-gap:4px; line-height:1.05}
+.pbig .v{font-size:clamp(28px,4.4vw,60px); font-weight:700; letter-spacing:-0.035em; font-variant-numeric:tabular-nums}
+.pbig .u{font-size:20px; font-weight:700}
+.ptotal .cell-v{font-size:20px}
+.ptotal .cell-v .num{font-size:22px}
+.pask{grid-row:span 4; display:flex; flex-direction:column; justify-content:center; gap:6px; background:var(--tint)}
+.pask .ask{font-size:clamp(22px,2.6vw,36px); font-weight:700; letter-spacing:-0.035em; line-height:1.2}
+.ppt .cell-v{font-size:20px}
+.pextra .cell-v{font-size:14px; font-weight:500; color:var(--ink-2)}
+.price-fine{margin-top:14px; font-size:13px; color:var(--ink-2)}
+@media (max-width:760px){
+  .pbig .u{font-size:13px}
+  .ptotal .cell-v, .ppt .cell-v{font-size:15px}
+  .ptotal .cell-v .num{font-size:16px}
+  .pextra .cell-v{font-size:12.5px}
+  .price-fine{font-size:12px}
+}
+
+/* ===== 3. 시설 비교 탭 ===== */
+.tabs{display:inline-flex; gap:4px; padding:4px; border-radius:14px; background:var(--card); border:1px solid var(--rule)}
+.tab{min-height:44px; padding:0 22px; border:0; border-radius:10px; background:transparent; color:var(--ink-2); font-size:15px; font-weight:600; cursor:pointer}
+.tab:hover{color:var(--ink); background:var(--tint)}
+.tab[aria-selected="true"]{background:var(--ink); color:#fff}
+.fcol{--rows:2}
+.fshot{position:relative; aspect-ratio:4/3; overflow:hidden; background:#17263A}
+.layer{position:absolute; inset:0; overflow:hidden; transition:opacity .34s ease-out}
+.layer.pre{opacity:0}
+.layer img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:var(--p,50% 50%); transform:scale(var(--z,1)); transform-origin:var(--o,50% 50%)}
+.layer .blur{filter:blur(18px) brightness(.6); transform:scale(1.2)}
+.layer .fit{object-fit:contain; transform:none}
+.fshot .stamp{right:12px; top:12px}
+.fmeta{display:flex; flex-wrap:wrap; align-items:baseline; gap:2px 10px; padding:14px var(--pad) 16px}
+.fmeta b{font-size:17px; font-weight:700}
+.fmeta span{font-size:15px; color:var(--ink-2)}
+.fmeta .num{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){ .layer{transition:none} }
+@media (max-width:760px){
+  .tabs{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); width:100%}
+  .tab{padding:0 2px; font-size:14px}
+  .fshot{aspect-ratio:4/5}
+  .layer img{object-position:var(--pm, var(--p, 50% 50%))}
+  .fshot .stamp{right:6px; top:6px; font-size:10px; padding:1px 6px}
+  .fmeta{padding:10px var(--pad) 12px; gap:0 6px}
+  .fmeta b{font-size:14px}
+  .fmeta span{font-size:12.5px}
+}
+
+/* ===== 4. 처음 배우는 장면 ===== */
+.learn{display:grid; grid-template-columns:minmax(0,360px) minmax(0,1fr); gap:24px 56px; align-items:center}
+.learn-side{display:flex; flex-direction:column; gap:40px; min-width:0}
+.learn-shot{border-radius:var(--r); overflow:hidden; background:var(--card); box-shadow:0 1px 2px rgba(32,58,87,.06)}
+.learn-shot img{width:100%; height:auto}
+.learn-cap{display:flex; flex-wrap:wrap; align-items:baseline; gap:2px 10px; padding:14px 18px 16px}
+.learn-cap b{font-size:16px; font-weight:700}
+.learn-cap span{font-size:14px; color:var(--ink-2)}
+.learn-k{font-size:18px; font-weight:700; letter-spacing:-0.02em; margin-bottom:12px}
+.ptc{--rows:3; position:relative}
+.ptc > *{padding-inline:24px}
+.ptc-n{padding-top:22px}
+.ptc-s{padding-bottom:22px}
+.ptc.plus::before{content:""; position:absolute; left:0; top:16px; bottom:16px; width:4px; border-radius:0 4px 4px 0; background:var(--rose)}
+.ptc-n{display:flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:var(--ink-2)}
+.ptc-v{margin-top:6px; display:flex; align-items:baseline; gap:4px; font-size:22px; font-weight:700; line-height:1.1}
+.ptc-v .num{font-size:clamp(40px,6.4vw,96px); letter-spacing:-0.03em; line-height:1}
+.ptc-v.ask{font-size:clamp(20px,2.2vw,28px); padding-top:12px}
+.ptc-s{margin-top:6px; font-size:14px; color:var(--ink-2)}
+.ptc.plus .ptc-s{color:var(--rose-deep); font-weight:600}
+.voice{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:var(--cg)}
+.voice li{padding:16px 20px; border-radius:var(--r); background:var(--card); box-shadow:0 1px 2px rgba(32,58,87,.06)}
+.voice q{display:block; font-size:15px; font-weight:600; quotes:"‘" "’"}
+.voice .num{display:block; margin-top:2px; font-size:30px; line-height:1.2}
+.voice small{font-size:13px; font-weight:500; color:var(--ink-2)}
+.voice-src{margin-top:10px; font-size:12.5px; color:var(--ink-2)}
+@media (max-width:900px){
+  .learn{grid-template-columns:1fr}
+  .learn-shot{max-width:none}
+}
+@media (max-width:760px){
+  .ptc > *{padding-inline:12px}
+  .ptc-n{padding-top:12px}
+  .ptc-s{padding-bottom:14px}
+  .ptc.plus::before{width:3px}
+  .ptc-n{font-size:12.5px}
+  .ptc-v{font-size:16px}
+  .ptc-v .num{font-size:38px}
+  .ptc-v.ask{font-size:18px; padding-top:8px}
+  .ptc-s{font-size:12.5px}
+  .learn-side{gap:20px}
+  .voice{margin-top:0}
+  .voice li{padding:12px}
+  .voice q{font-size:13px}
+  .voice .num{font-size:24px}
+  .voice small{font-size:12px}
+}
+
+/* ===== 5. 트레이너 ===== */
+.cmp > .tcol{display:block; align-self:start}
+.thead{display:flex; flex-wrap:wrap; align-items:center; gap:6px 10px; padding:18px var(--pad) 14px}
+.thead h3{font-size:18px; font-weight:700; letter-spacing:-0.02em}
+.thead .cnt{font-size:14px; font-weight:600; color:var(--ink-2)}
+.thead .tag{margin-left:auto}
+.tlist > li{display:grid; grid-template-columns:64px minmax(0,1fr); gap:4px 16px; padding:16px var(--pad); border-top:1px solid var(--rule-2)}
+.face{grid-row:span 2; width:64px; height:64px; border-radius:14px; overflow:hidden; background:var(--tint)}
+.face img{width:100%; height:100%; object-fit:cover; object-position:var(--p,50% 50%); transform:scale(var(--z,1)); transform-origin:var(--o,50% 50%); filter:grayscale(1) contrast(1.05) brightness(var(--b,1))}
+.face.none{display:grid; place-items:center}
+.face.none img{width:62%; height:auto; transform:none; filter:none; opacity:.5}
+.tname{font-size:17px; font-weight:700; line-height:1.35}
+.tname small{margin-left:6px; font-size:14px; font-weight:500; color:var(--ink-2)}
+.tinfo{font-size:14px; color:var(--ink-2); line-height:1.55}
+.tinfo .tag{margin-top:4px}
+.taward{display:flex; align-items:center; gap:8px; margin-top:6px; color:var(--ink); font-weight:600}
+.taward .rk{width:28px; height:28px; font-size:10.5px}
+@media (max-width:760px){
+  .thead{padding:12px var(--pad) 10px; gap:4px 8px}
+  .thead h3{font-size:15px}
+  .thead .cnt{font-size:12.5px}
+  .thead .tag{margin-left:0; white-space:normal; font-size:10.5px}
+  .tlist > li{grid-template-columns:40px minmax(0,1fr); gap:2px 8px; padding:12px var(--pad)}
+  .face{grid-row:auto; width:40px; height:40px; border-radius:10px}
+  .tname{font-size:14px; align-self:center; line-height:1.25}
+  .tname small{display:block; margin-left:0; font-size:11.5px}
+  .tinfo{grid-column:1 / -1; font-size:12.5px; margin-top:6px}
+  .taward{gap:6px; align-items:flex-start}
+  .taward .rk{width:22px; height:22px; font-size:9px}
+}
+
+/* ===== 6. 방문 조건 ===== */
+.vcol{--rows:7}
+.live{display:flex; align-items:center; gap:8px; font-size:15px; font-weight:600}
+.live .dot{width:9px; height:9px; flex:none; border-radius:50%; background:#9AA8B9}
+.live.on .dot{background:#2F9A3D; box-shadow:0 0 0 3px rgba(47,154,61,.18)}
+.hours li{display:flex; flex-wrap:wrap; column-gap:8px; font-size:15px; line-height:1.6}
+.hours li span:first-child{min-width:5.2em; color:var(--ink-2); font-weight:500}
+.hours li.h24{font-weight:700}
+.vneg{color:var(--ink-2)}
+.way-ln{margin-right:6px; vertical-align:-3px}
+.vaddr{font-size:14.5px; font-weight:500}
+.vacts{display:flex; flex-wrap:wrap; gap:0 16px; margin-top:2px; margin-bottom:-8px}
+.vacts .link, .picked-links .link{min-width:44px}
+@media (max-width:760px){
+  .live{font-size:12.5px; align-items:flex-start; gap:6px}
+  .live .dot{margin-top:5px; width:8px; height:8px}
+  .hours li{font-size:12.5px; column-gap:4px}
+  .hours li span:first-child{min-width:0}
+  .vaddr{font-size:12.5px}
+  .vacts{gap:0 12px}
+  .vacts .link{font-size:12.5px}
+}
+
+/* ===== 7. 선택과 문의 ===== */
+.kcol{--rows:3}
+.kshot{aspect-ratio:16/10; overflow:hidden}
+.kshot img{width:100%; height:100%; object-fit:cover; object-position:var(--p,50% 50%)}
+.kinfo{padding:16px var(--pad) 4px}
+.kinfo h3{font-size:20px; font-weight:700; letter-spacing:-0.02em}
+.kfacts{display:flex; flex-wrap:wrap; gap:4px 16px; margin-top:6px; font-size:15px; color:var(--ink-2)}
+.kfacts .num{color:var(--ink)}
+.kact{padding:14px var(--pad) var(--pad)}
+.picked{display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); overflow:hidden}
+.picked[hidden]{display:none}
+.picked:focus{outline:none}
+.picked-shot{position:relative; min-height:420px}
+.picked-shot img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:var(--p,50% 50%)}
+.picked-body{padding:32px 32px 28px; display:flex; flex-direction:column}
+.picked-k{font-size:14px; font-weight:600; color:var(--ink-2)}
+.picked-name{margin-top:4px; font-size:clamp(26px,3vw,38px); font-weight:800; letter-spacing:-0.04em; line-height:1.2}
+.picked-stn{margin-top:6px; font-size:14px; color:var(--ink-2)}
+.picked-facts{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px 16px; margin:22px 0 24px; padding:18px 0; border-top:1px solid var(--rule-2); border-bottom:1px solid var(--rule-2)}
+.picked-facts dt{font-size:13px; color:var(--ink-3); font-weight:600}
+.picked-facts dd{font-size:17px; font-weight:700; line-height:1.35}
+.picked-links{display:flex; flex-wrap:wrap; gap:4px 18px; margin-top:14px}
+.picked-again{margin-top:auto; padding-top:18px}
+@media (max-width:760px){
+  .kinfo{padding:10px var(--pad) 2px}
+  .kinfo h3{font-size:15px}
+  .kfacts{flex-direction:column; gap:0; font-size:12.5px}
+  .kact{padding:10px var(--pad) var(--pad)}
+  .kact .btn{min-height:48px; padding:0 6px; font-size:13.5px}
+  .picked{grid-template-columns:1fr}
+  .picked-shot{min-height:0; aspect-ratio:4/3}
+  .picked-body{padding:20px 16px 18px}
+  .picked-facts{margin:16px 0 18px; padding:14px 0}
+  .picked-facts dd{font-size:15px}
+}
+
+/* ===== 푸터 ===== */
+.foot{margin-top:96px; padding:44px 0 72px; background:var(--ink); color:#D7E2EE; font-size:13.5px; line-height:1.75}
+.foot .brand-word{filter:none; width:140px; height:35px}
+.foot .brand-sym{filter:invert(1) brightness(1.1)}
+.foot-biz{margin-top:18px}
+.foot-biz p + p{margin-top:2px}
+.foot .todo{background:transparent; border-color:#F3D27A; color:#F3D27A}
+@media (max-width:760px){ .foot{margin-top:64px; font-size:12.5px} }
+
+/* ===== 시트(dialog) ===== */
+dialog.sheet{border:0; padding:0; width:calc(100% - 32px); max-width:460px; border-radius:20px; background:var(--card); color:var(--ink); box-shadow:0 20px 60px rgba(16,30,48,.3)}
+dialog.sheet::backdrop{background:rgba(16,30,48,.5)}
+.sheet-in{padding:22px 22px 18px}
+.sheet-head{display:flex; align-items:center; gap:14px; margin-bottom:12px}
+.sheet-head img{width:52px; height:52px; flex:none; border-radius:12px; object-fit:cover}
+.sheet-head h2{font-size:20px; font-weight:800; letter-spacing:-0.03em; line-height:1.3}
+.sheet-head .stn{font-size:13px; color:var(--ink-2)}
+.sheet-x{margin-left:auto; flex:none; min-width:44px; min-height:44px; border:0; border-radius:10px; background:var(--tint); font-size:14px; font-weight:600; cursor:pointer}
+.clist a{display:flex; align-items:center; gap:14px; min-height:62px; padding:8px 4px; border-top:1px solid var(--rule-2); text-decoration:none}
+.clist a:hover{background:var(--tint)}
+.clist .ic{display:grid; place-items:center; width:40px; height:40px; flex:none; border-radius:12px; background:var(--tint)}
+.clist .ic svg{width:20px; height:20px}
+.clist b{display:block; font-size:16px; font-weight:700}
+.clist small{display:block; font-size:13px; color:var(--ink-2)}
+.clist .go{margin-left:auto; color:var(--ink-3); font-size:18px}
+.sheet .pairs{grid-template-columns:1fr}
+.sheet .pair{flex-direction:row; text-align:left; padding:10px 14px}
+.sheet .pair-names{flex-direction:row; font-size:15px}
+.sheet .pair-names i{display:inline}
+.sheet .pair-thumbs img{width:40px; height:40px}
+@media (max-width:760px){
+  dialog.sheet{width:100%; max-width:none; margin:auto 0 0; border-radius:20px 20px 0 0}
+  .sheet-in{padding:18px 16px calc(14px + env(safe-area-inset-bottom))}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#main" aria-label="로망휘트니스 처음으로">
+      <img class="brand-sym" src="assets/img/logo_symbol.png" alt="" width="600" height="400">
+      <img class="brand-word" src="assets/img/logo_wordmark_white.png" alt="로망휘트니스" width="600" height="150">
+    </a>
+    <nav class="nav" aria-label="페이지 안 이동">
+      <a href="#price">회원권</a>
+      <a href="#fac">시설</a>
+      <a href="#learn">처음 배우기</a>
+      <a href="#trainers">트레이너</a>
+      <a href="#visit">방문 조건</a>
+    </nav>
+    <button class="btn" type="button" data-open-pairs>비교 지점 바꾸기</button>
+  </div>
+</header>
+
+<!-- 신뢰 줄: 실제 수상 4건. 연도 없는 3건은 확인 필요 -->
+<section class="trust" aria-label="트레이너 대회 수상 4건">
+  <div class="wrap trust-in">
+    <p class="trust-k" aria-hidden="true"><span>트레이너 수상</span><span><b class="num">4</b>건</span></p>
+    <ul class="trust-list">
+      <li><span class="rk">1위</span><span class="tt"><b>PCA 클래식보디빌딩 체급</b><small>고척신정점 이명기 · 2023</small></span></li>
+      <li><span class="rk">1위</span><span class="tt"><b>태권도 겨루기 아시아대회</b><small>고척신정점 김원정 · 연도<span class="todo" title="김원정 점장의 태권도 겨루기 아시아대회 1위 연도를 확인해 주세요.">확인 필요</span></small></span></li>
+      <li><span class="rk">1위</span><span class="tt"><b>러시아 오픈 태권도 단체 겨루기</b><small>고척신정점 김원우 · 연도<span class="todo" title="김원우 팀장의 러시아 오픈 태권도 단체 겨루기 1위 연도를 확인해 주세요.">확인 필요</span></small></span></li>
+      <li><span class="rk r2">2위</span><span class="tt"><b>WNGP 의정부 보디빌딩 오픈</b><small>영등포점 배현욱 · 연도<span class="todo" title="배현욱 수석 트레이너의 WNGP 의정부 보디빌딩 오픈 2위 연도를 확인해 주세요.">확인 필요</span></small></span></li>
+    </ul>
+  </div>
+</section>
+
+<main id="main">
+
+<!-- 1. 사진 비교 히어로: 조작 없이도 완성된 비교 -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="hero-head">
+      <h1 class="hero-title" id="hero-title">두 지점을 나란히 살펴보세요.</h1>
+      <p class="basis"><b>같은 기준</b><span>사진 · 덤벨 구역</span><span>별점 · 네이버 플레이스</span></p>
+    </div>
+    <div class="cmp" id="hero-cmp">
+      <p class="bridge" id="bridge" hidden><span class="lns" aria-hidden="true"><i class="ln ln-2">2</i></span>신정지선 두 정거장</p>
+    </div>
+
+    <section class="switch" id="switch" aria-labelledby="switch-title">
+      <h2 class="switch-k" id="switch-title">비교 지점 바꾸기</h2>
+      <div class="pairs" role="group" aria-label="비교할 두 지점" data-pairs></div>
+    </section>
+    <p class="sr" aria-live="polite" id="announce"></p>
+  </div>
+</section>
+
+<div class="pairbar" id="pairbar" hidden aria-hidden="true">
+  <div class="wrap"><div class="cmp" id="pairbar-cmp"></div></div>
+</div>
+
+<!-- 2. 회원권 비교 -->
+<section class="sec" id="price" aria-labelledby="price-title">
+  <div class="wrap">
+    <header class="sh">
+      <h2 class="sh-title" id="price-title">회원권</h2>
+      <p class="sh-aux"><span>부가세 포함 여부<span class="todo" title="표시 금액이 부가세 포함인지 별도인지 지점별로 확인해 주세요. 별도라면 결제 금액이 10% 더 많아요.">확인 필요</span></span><span>환불 기준·보증보험<span class="todo" title="지점별 환불 기준과 회원권 보증보험 가입 여부를 받아 주세요.">확인 필요</span></span><span class="legend"><i aria-hidden="true"></i>더 유리한 쪽</span></p>
+    </header>
+    <div class="cmp" id="price-cmp"></div>
+    <p class="price-fine">월 환산 = 12개월 회원권 ÷ 12. 가격은 네이버 플레이스 2026년 11월 기준이에요.</p>
+  </div>
+</section>
+
+<!-- 3. 시설 비교 탭: 두 사진이 같은 분류로 함께 바뀐다 -->
+<section class="sec" id="fac" aria-labelledby="fac-title">
+  <div class="wrap">
+    <header class="sh">
+      <h2 class="sh-title" id="fac-title">시설</h2>
+      <div class="tabs" role="tablist" aria-label="시설 분류">
+        <button class="tab" type="button" role="tab" id="tab-machine" data-cat="machine" aria-controls="fac-panel" aria-selected="true">머신</button>
+        <button class="tab" type="button" role="tab" id="tab-rack" data-cat="rack" aria-controls="fac-panel" aria-selected="false" tabindex="-1">덤벨·랙</button>
+        <button class="tab" type="button" role="tab" id="tab-cardio" data-cat="cardio" aria-controls="fac-panel" aria-selected="false" tabindex="-1">유산소</button>
+        <button class="tab" type="button" role="tab" id="tab-stretch" data-cat="stretch" aria-controls="fac-panel" aria-selected="false" tabindex="-1">스트레칭</button>
+      </div>
+    </header>
+    <div class="cmp" id="fac-panel" role="tabpanel" aria-labelledby="tab-machine"></div>
+  </div>
+</section>
+
+<!-- 4. 처음 배우는 장면: 파주교하점 실제 수업 사진. 비교 열과 분리된 독립 블록 -->
+<section class="sec" id="learn" aria-labelledby="learn-title">
+  <div class="wrap">
+    <header class="sh">
+      <h2 class="sh-title" id="learn-title">처음 배우는 장면</h2>
+    </header>
+    <div class="learn">
+      <figure class="learn-shot">
+        <img src="assets/img/pj_tr_stretching.jpg" width="720" height="960" loading="lazy" decoding="async"
+             alt="파주교하점 형지민 트레이너가 무릎을 꿇고 앉아, 매트에 누운 회원의 다리를 잡고 고관절 스트레칭을 돕고 있다. 뒤로 보라색 폼롤러와 머신이 보인다.">
+        <figcaption class="learn-cap"><b>파주교하점 형지민 트레이너</b><span>스트레칭 수업</span></figcaption>
+      </figure>
+      <div class="learn-side">
+        <div>
+          <h3 class="learn-k">등록하면 받는 PT</h3>
+          <div class="cmp" id="pt-cmp"></div>
+        </div>
+        <div>
+        <ul class="voice">
+          <li><q>친절해요</q><b class="num">819</b><small>리뷰에서 고른 수</small></li>
+          <li><q>과도한 권유가 없어요</q><b class="num">34</b><small>리뷰에서 고른 수</small></li>
+        </ul>
+        <p class="voice-src">세 지점 합계 · 네이버 플레이스 2026년 11월</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. 지점별 트레이너 -->
+<section class="sec" id="trainers" aria-labelledby="trainers-title">
+  <div class="wrap">
+    <header class="sh">
+      <h2 class="sh-title" id="trainers-title">트레이너</h2>
+    </header>
+    <div class="cmp" id="tr-cmp"></div>
+  </div>
+</section>
+
+<!-- 6. 방문 조건 비교: 같은 행끼리 맞춘 두 열 카드 -->
+<section class="sec" id="visit" aria-labelledby="visit-title">
+  <div class="wrap">
+    <header class="sh">
+      <h2 class="sh-title" id="visit-title">방문 조건</h2>
+      <p class="sh-aux"><span>공휴일 운영<span class="todo" title="공휴일에 여는지, 몇 시까지인지 지점별로 확인해 주세요.">확인 필요</span></span><span class="legend"><i aria-hidden="true"></i>더 유리한 쪽</span></p>
+    </header>
+    <div class="cmp" id="visit-cmp"></div>
+  </div>
+</section>
+
+<!-- 7. 선택과 문의 -->
+<section class="sec" id="pick" aria-labelledby="pick-title">
+  <div class="wrap">
+    <header class="sh">
+      <h2 class="sh-title" id="pick-title">어디로 정할까요?</h2>
+    </header>
+    <div class="cmp" id="pick-cmp"></div>
+    <div class="card picked" id="picked" hidden tabindex="-1"></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="로망휘트니스 처음으로">
+      <img class="brand-sym" src="assets/img/logo_symbol.png" alt="" width="600" height="400" loading="lazy">
+      <img class="brand-word" src="assets/img/logo_wordmark_white.png" alt="로망휘트니스" width="600" height="150" loading="lazy">
+    </a>
+    <div class="foot-biz">
+      <p>상호 로망휘트니스 · 대표 김의겸</p>
+      <p>사업자등록번호 고척신정점 102-06-94392 · 파주교하점 680-18-01829 · 영등포점 미기재<span class="todo" title="영등포점 사업자등록번호를 받아 주세요.">확인 필요</span></p>
+      <p>평점·리뷰 수·가격은 네이버 플레이스 2026년 11월 기준이에요. 월 환산 금액은 12개월 회원권 ÷ 12예요.</p>
+      <p>트레이너 프로필 사진은 수업 장면으로 바꿀 예정이에요.</p>
+    </div>
+  </div>
+</footer>
+
+<p class="draft-mark" aria-hidden="true">시안 L</p>
+
+<!-- 지점 연락 시트 -->
+<dialog class="sheet" id="contact" aria-labelledby="contact-title">
+  <div class="sheet-in" id="contact-in"></div>
+</dialog>
+
+<!-- 비교 지점 바꾸기 시트 -->
+<dialog class="sheet" id="pairs-sheet" aria-labelledby="pairs-title">
+  <div class="sheet-in">
+    <div class="sheet-head">
+      <h2 id="pairs-title">비교할 두 지점</h2>
+      <button class="sheet-x" type="button" data-close>닫기</button>
+    </div>
+    <div class="pairs" role="group" aria-label="비교할 두 지점" data-pairs></div>
+  </div>
+</dialog>
+
+<script>
+(function(){
+  "use strict";
+  var IMG = "assets/img/";
+  var LN = { "1":"ln-1", "2":"ln-2", "GTX-A":"ln-gtx" };
+  var LN_NAME = { "1":"1호선", "2":"2호선", "GTX-A":"GTX-A" };
+
+  /* ---------- 데이터 (d-first.html 기준) ---------- */
+  var B = {
+    gc:{
+      key:"gc", name:"고척신정점", lines:["2"], station:"양천구청역",
+      size:{ k:"약", v:"200", u:"평", text:"약 200평" },
+      rate:"4.81", rev:"435",
+      hero:{ src:"gc_freeweight.jpg", w:1440, h:1080, p:"58% 50%", pm:"74% 50%",
+        alt:"고척신정점 덤벨 구역. LED 조명이 들어간 덤벨 랙이 오른쪽으로 길게 이어지고 왼쪽에 벤치가 놓여 있다." },
+      chips:[ {rk:1, t:"PCA 클래식보디빌딩"}, {rk:1, t:"태권도 2건"} ],
+      price:{ m:"35,000", mu:"원", total:"420,000", tnote:"헬스 12개월", incl:"운동복 포함", day:"15,000", pt:1,
+        extra:"PT 10회 + 헬스 3개월 510,000원 · 12개월 600,000원" },
+      fac:{
+        machine:{ src:"gc_machine_window.jpg", p:"50% 60%", pm:"36% 60%", k:"머신존", f:"",
+          alt:"고척신정점 머신존. 밝은 천장 조명 아래 흰색과 검은색 웨이트 머신이 창을 따라 놓여 있다." },
+        rack:{ src:"gc_racks.jpg", p:"50% 50%", pm:"30% 55%", k:"랙 구역", f:"랙·스미스 <b class=\"num\">6</b>대 · 덤벨 <b class=\"num\">1–40</b>kg",
+          alt:"고척신정점 랙 구역. 검은 파워랙과 벤치가 늘어서 있고 바닥 일부에 원목 플랫폼이 깔려 있다." },
+        cardio:{ src:"gc_stretch.jpg", p:"50% 50%", pm:"72% 50%", z:1.35, o:"78% 48%", k:"유산소 구역", f:"러닝머신 <b class=\"num\">11</b>대",
+          alt:"고척신정점 유산소 구역. 큰 창을 따라 러닝머신과 사이클이 길게 늘어서 있다." },
+        stretch:{ src:"gc_stretch.jpg", p:"50% 50%", pm:"30% 70%", z:1.7, o:"20% 86%", k:"복근 벤치 구역", f:"", tag:"가까운 구역 사진",
+          alt:"고척신정점 거울 앞 복근 벤치와 짐볼이 놓인 구역. 스트레칭존 사진을 받기 전까지 쓰는 가까운 구역 사진." }
+      },
+      trNote:"수업 장면으로 교체 예정",
+      tr:[
+        { n:"김원정", r:"점장", face:"gc_tr_wonjung_face.jpg", fs:"--z:1.25;--o:50% 42%;--b:1.12", info:["전 GO PT샵 대표, 스피닝 강사 경력"], aw:{ rk:1, t:"태권도 겨루기 아시아대회", y:null } },
+        { n:"김원우", r:"팀장", face:"gc_tr_wonwoo_face.jpg", fs:"--z:1.4;--o:50% 42%;--b:1.15", info:["운동처방사, 태권도 4단"], aw:{ rk:1, t:"러시아 오픈 태권도 단체 겨루기", y:null } },
+        { n:"이명기", r:"트레이너", face:"gc_tr_myeonggi_face.jpg", fs:"--z:1.6;--o:54% 50%", info:["생활체육지도자(보디빌딩)", "순천향대 스포츠과학과"], aw:{ rk:1, t:"PCA 클래식보디빌딩 체급", y:"2023" } }
+      ],
+      hours:[ ["평일","06:00–23:00"], ["토","06:00–19:00","네이버 플레이스엔 토요일 10:00 오픈으로 나와요. 지점에 확인해 주세요."], ["일·공휴일","10:00–19:00"] ],
+      h24:0, off:"연중무휴", offS:1,
+      park:{ v:"건물 지하 무료", s:"시간 제한 없음 · 입구 목동남로 28", score:2 },
+      way:{ v:"양천구청역", s:"신성빌딩 5층" },
+      addr:"서울 구로구 중앙로14길 31 신성빌딩 5층",
+      tel:"050714591054", telT:"0507-1459-1054", talk:"https://talk.naver.com/w441n8", kakao:"http://pf.kakao.com/_yNIgG", book:null,
+      map:"https://map.naver.com/p/entry/place/1613655457",
+      day:function(d){ if(d.dow>=1 && d.dow<=5) return [[360,1380]]; if(d.dow===6) return [[360,1140]]; return [[600,1140]]; }
+    },
+    yd:{
+      key:"yd", name:"영등포점", lines:["1","2"], station:"신도림역",
+      size:{ k:"", v:"300", u:"평대", text:"300평대" },
+      rate:"5.0", rev:"241",
+      hero:{ src:"yd_dumbbell.jpg", w:1800, h:1350, p:"42% 50%", pm:"44% 50%",
+        alt:"영등포점 덤벨 구역. 거울벽 앞에 덤벨 랙이 길게 놓여 있고 앞쪽에 흰 벤치 여러 대가 있다." },
+      chips:[ {rk:2, t:"WNGP 보디빌딩"}, {t:"노키즈존"} ],
+      price:{ ask:true, pt:2, extra:"개별 샤워실 · 탈의실 스타일러·에어드레서" },
+      fac:{
+        machine:{ src:"yd_machine.jpg", p:"50% 70%", pm:"40% 70%", k:"머신존", f:"",
+          alt:"영등포점 머신존. 검은 천장의 레일 조명 아래 플레이트 머신이 넓게 놓여 있다." },
+        rack:{ src:"yd_racks.jpg", p:"55% 50%", pm:"42% 50%", k:"파워랙 구역", f:"",
+          alt:"영등포점 랙 구역. 거울벽을 따라 흰색 파워랙과 스미스 머신이 한 줄로 늘어서 있다." },
+        cardio:{ src:"yd_stairs.jpg", p:"50% 50%", pm:"40% 55%", k:"유산소 구역", f:"천국의계단 <b class=\"num\">3</b>대",
+          alt:"영등포점 유산소 구역. 검은 천장 아래 천국의계단과 실내 자전거가 놓여 있다." },
+        stretch:{ src:"yd_stretch.jpg", p:"50% 50%", pm:"42% 55%", k:"스트레칭존", f:"",
+          alt:"영등포점 스트레칭존. 간접조명이 들어간 단 위에 검은 매트가 일렬로 놓여 있다." }
+      },
+      trNote:"수업 장면으로 교체 예정",
+      tr:[
+        { n:"손주환", r:"대표", face:"yd_tr_son_face.jpg", fs:"--z:1.2;--o:48% 66%", info:["생활체육지도사 2급"] },
+        { n:"박강훈", r:"지점장", face:"yd_tr_park_face.jpg", fs:"--z:1.25;--o:56% 40%;--b:1.12", info:["지도 경력 11년"] },
+        { n:"이상혁", r:"수석 트레이너", face:"yd_tr_lee_face.jpg", fs:"--z:1.45;--o:78% 48%", info:["해부학·컨디셔닝·근막이완 과정 수료"] },
+        { n:"배현욱", r:"수석 트레이너", face:"yd_tr_bae_face.jpg", fs:"--z:1.2;--o:72% 58%;--b:1.18", info:[], aw:{ rk:2, t:"WNGP 의정부 보디빌딩 오픈", y:null } },
+        { n:"윤지민", r:"트레이너", face:null, info:["필라테스(BASI)", "2026년 4월 합류"], none:"사진 준비 중" }
+      ],
+      hours:[ ["월","06:00–24:00","지점 소개 페이지엔 월요일 23:00 마감으로 나와요. 지점에 확인해 주세요."], ["화–금","24시간"], ["토","00:00–21:00"], ["일","10:00–21:00"] ],
+      h24:1, off:"1·3·5주 일요일", offS:0,
+      park:{ v:"지원 안 함", s:"", score:0 },
+      way:{ v:"신도림역 2번 출구 도보 약 13분", s:"788m · 도림시장·하나로마트 건물 3층" },
+      addr:"서울 영등포구 도영로 50 3층",
+      tel:"050713835663", telT:"0507-1383-5663", talk:"https://talk.naver.com/w5u3yj", kakao:null, book:"https://m.booking.naver.com/booking/13/bizes/1249375",
+      map:"https://map.naver.com/p/entry/place/1856428130",
+      day:function(d){ if(d.dow===1) return [[360,1440]]; if(d.dow>=2 && d.dow<=5) return [[0,1440]]; if(d.dow===6) return [[0,1260]]; return oddSun(d) ? [] : [[600,1260]]; }
+    },
+    pj:{
+      key:"pj", name:"파주교하점", lines:["GTX-A"], station:"운정중앙역",
+      size:{ k:"기구", v:"80", u:"종 이상", text:"기구 80종 이상" },
+      rate:"5.0", rev:"492",
+      hero:{ src:"pj_freeweight.jpg", w:1800, h:1350, p:"50% 62%", pm:"46% 60%",
+        alt:"파주교하점 덤벨 구역. 노란 덤벨이 놓인 랙 앞에 벤치와 케이블 머신이 있다." },
+      chips:[ {t:"8층 헬스장 + 7층 GX실"} ],
+      price:{ m:"33,333", mu:"원부터", total:"400,000", tnote:"알뜰 12개월", tsub:"기본 480,000원 · 로망 500,000원", incl:"운동복·락커 포함 등급 월 41,667원", day:"19,800", pt:null,
+        extra:"문화비 소득공제 · 태닝 별도 요금" },
+      fac:{
+        machine:{ src:"pj_machine_white.jpg", p:"50% 85%", pm:"40% 85%", k:"머신존", f:"QR 사용법 영상",
+          alt:"파주교하점 머신존. 검은 천장 아래 흰색 플레이트 머신이 모여 있다." },
+        rack:{ src:"pj_freeweight.jpg", p:"50% 65%", pm:"46% 62%", k:"프리웨이트존", f:"",
+          alt:"파주교하점 프리웨이트존. 덤벨 랙과 벤치, 케이블 머신이 놓여 있다." },
+        cardio:{ src:"pj_cardio.jpg", p:"50% 50%", pm:"58% 55%", k:"유산소 구역", f:"러닝머신 <b class=\"num\">10</b>대 · 천국의계단 <b class=\"num\">5</b>대",
+          alt:"파주교하점 유산소 구역. 창가를 따라 러닝머신과 스피닝 자전거가 늘어서 있다." },
+        stretch:{ src:"pj_tr_stretching.jpg", fit:true, k:"매트·폼롤러 구역", f:"", tag:"수업 장면 사진",
+          alt:"파주교하점 매트 구역에서 트레이너가 회원의 스트레칭을 돕는 장면. 뒤로 보라색 폼롤러가 보인다." }
+      },
+      trNote:"분야·자격 확인 중",
+      tr:[
+        { n:"이광영", r:"지점장", face:null, info:[], none:"사진 준비 중" },
+        { n:"형지민", r:"트레이너", face:"pj_tr_stretching.jpg", fs:"--p:50% 22%;--z:2.6;--o:50% 30%", info:["스트레칭 수업 사진 있음"] },
+        { n:"오소연", r:"트레이너", face:null, info:[], none:"사진 준비 중" },
+        { n:"임지민", r:"트레이너", face:null, info:[], none:"사진 준비 중" }
+      ],
+      hours:[ ["월","06:00 오픈"], ["화–금","24시간"], ["토","00:00–18:00"], ["일·공휴일","10:00–18:00"] ],
+      h24:1, off:"1·3·5주 일요일", offS:0,
+      park:{ v:"건물 지하 3시간 무료", s:"", score:1 },
+      way:{ v:"운정중앙역", s:"롯데리아 건물 웰스피아빌딩 8층" },
+      addr:"경기 파주시 책향기로 419 웰스피아빌딩 8층",
+      tel:"050713149178", telT:"0507-1314-9178", talk:"https://talk.naver.com/w4dobq", kakao:"http://pf.kakao.com/_Fxamxmxj", book:null,
+      map:"https://map.naver.com/p/entry/place/1337216446",
+      day:function(d){ if(d.dow===1) return [[360,1440]]; if(d.dow>=2 && d.dow<=5) return [[0,1440]]; if(d.dow===6) return [[0,1080]]; return oddSun(d) ? [] : [[600,1080]]; }
+    }
+  };
+  var ORDER = ["gc","yd","pj"];
+  var PAIRS = [["gc","yd"],["gc","pj"],["yd","pj"]];
+  var CATS = ["machine","rack","cardio","stretch"];
+  var CAT_NAME = { machine:"머신", rack:"덤벨·랙", cardio:"유산소", stretch:"스트레칭" };
+
+  /* ---------- 상태 ---------- */
+  var q = new URLSearchParams(location.search);
+  var state = { pair:["gc","yd"], cat:"machine", picked:null };
+  (function(){
+    var p = (q.get("pair") || "").split("-");
+    if(p.length === 2 && B[p[0]] && B[p[1]] && p[0] !== p[1]) state.pair = ORDER.filter(function(k){ return p.indexOf(k) > -1; });
+    if(CATS.indexOf(q.get("cat")) > -1) state.cat = q.get("cat");
+    if(state.pair.indexOf(q.get("pick")) > -1) state.picked = q.get("pick");
+  })();
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- 작은 도우미 ---------- */
+  function $(s, r){ return (r || document).querySelector(s); }
+  function $$(s, r){ return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+  function lnBadges(b){ return b.lines.map(function(l){ return '<i class="ln ' + LN[l] + '">' + l + '</i>'; }).join(""); }
+  function stn(b){
+    return '<span class="stn"><span class="lns" aria-hidden="true">' + lnBadges(b) +
+      '</span><span class="sr">' + b.lines.map(function(l){ return LN_NAME[l]; }).join(", ") + ' </span>' + b.station + '</span>';
+  }
+  function rk(n){ return '<span class="rk' + (n === 2 ? ' r2' : '') + '">' + n + '위</span>'; }
+  function todo(title){ return '<span class="todo" title="' + title + '">확인 필요</span>'; }
+  /* 더 유리한 쪽: 점수가 높은 열 하나만 표시. 같거나 모르면 표시 없음 */
+  function better(score, a, b){
+    var sa = score(B[a]), sb = score(B[b]);
+    if(sa == null || sb == null || sa === sb) return null;
+    return sa > sb ? a : b;
+  }
+  function thumb(b){ return IMG + b.hero.src; }
+
+  /* ---------- 지금 운영 여부 ---------- */
+  var MIN = 60000, DAY = 86400000, DOW = ["일","월","화","수","목","금","토"];
+  function oddSun(d){ return d.dow === 0 && Math.ceil(d.date / 7) % 2 === 1; }
+  function kstNow(){
+    var n = q.get("now");
+    if(n){ var m = n.match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/); if(m) return Date.UTC(+m[1], +m[2]-1, +m[3], +m[4], +m[5]); }
+    return Date.now() + 9*3600000;
+  }
+  function dinfo(ms){ var t = new Date(ms); return { dow:t.getUTCDay(), date:t.getUTCDate() }; }
+  function dstart(ms){ return Math.floor(ms / DAY) * DAY; }
+  function pad(n){ return (n < 10 ? "0" : "") + n; }
+  function clock(ms){ if(ms % DAY === 0) return "24:00"; var m = Math.round((ms - dstart(ms)) / MIN); return pad(Math.floor(m/60)) + ":" + pad(m%60); }
+  function spans(b, now){
+    var out = [], base = dstart(now);
+    for(var k=-1; k<=9; k++){
+      var ds = base + k*DAY, list = b.day(dinfo(ds));
+      for(var i=0; i<list.length; i++) out.push([ds + list[i][0]*MIN, ds + list[i][1]*MIN]);
+    }
+    var merged = [];
+    out.forEach(function(iv){ var l = merged[merged.length-1]; if(l && iv[0] <= l[1]) l[1] = Math.max(l[1], iv[1]); else merged.push(iv.slice()); });
+    return merged;
+  }
+  function rel(ms, now){
+    var ref = (ms % DAY === 0) ? ms - 1 : ms, diff = Math.round((dstart(ref) - dstart(now)) / DAY);
+    return diff === 0 ? "" : diff === 1 ? "내일 " : DOW[dinfo(ref).dow] + "요일 ";
+  }
+  function liveStatus(b){
+    var now = kstNow(), ivs = spans(b, now), todays = b.day(dinfo(now)), r = { open:false };
+    for(var i=0; i<ivs.length; i++){
+      if(ivs[i][0] <= now && now < ivs[i][1]){ r.open = true; r.until = ivs[i][1]; break; }
+      if(ivs[i][0] > now){ r.next = ivs[i][0]; break; }
+    }
+    if(r.open){ var rd = rel(r.until, now); r.text = "지금 운영 중 · " + (rd ? rd + clock(r.until) + "까지" : clock(r.until) + "에 닫아요"); }
+    else {
+      var label = !todays.length ? "오늘 휴무" : (now < dstart(now) + todays[0][0]*MIN ? "운영 전" : "운영 종료");
+      r.text = label + (r.next ? " · " + rel(r.next, now) + clock(r.next) + "에 열어요" : "");
+    }
+    return r;
+  }
+
+  /* ---------- 1. 히어로 ---------- */
+  function heroCol(b){
+    var h = b.hero;
+    var chips = b.chips.map(function(c){
+      return c.rk ? '<li>' + rk(c.rk) + c.t + '</li>' : '<li class="plain">' + c.t + '</li>';
+    }).join("");
+    return '<article class="card hcol" aria-labelledby="hn-' + b.key + '">' +
+      '<figure class="hshot" style="--p:' + h.p + ';--pm:' + h.pm + '">' +
+        '<img src="' + IMG + h.src + '" width="' + h.w + '" height="' + h.h + '" fetchpriority="high" decoding="async" alt="' + h.alt + '">' +
+        '<span class="hshot-stn">' + stn(b) + '</span>' +
+        '<figcaption class="hover">' +
+          '<h2 class="hname" id="hn-' + b.key + '">' + b.name + '</h2>' +
+          '<p class="hsize" aria-label="' + b.size.text + '">' + (b.size.k ? '<span class="k">' + b.size.k + '</span>' : '') + '<b class="v">' + b.size.v + '</b><span class="u">' + b.size.u + '</span></p>' +
+          '<p class="hrate"><span><span class="star" aria-hidden="true">★</span> <b class="num">' + b.rate + '</b></span><span class="sep" aria-hidden="true">·</span><span>리뷰 <b class="num">' + b.rev + '</b>건</span></p>' +
+        '</figcaption>' +
+      '</figure>' +
+      '<ul class="hchips" aria-label="' + b.name + ' 수상과 특징">' + chips + '</ul>' +
+      '<div class="hact"><button class="btn btn-primary btn-wide" type="button" data-contact="' + b.key + '">' + b.name + '에 문의하기</button></div>' +
+    '</article>';
+  }
+
+  /* ---------- 고정 이름 띠 ---------- */
+  function barCell(b){
+    return '<div class="pb-cell"><img src="' + thumb(b) + '" alt="" width="60" height="60"><b>' + b.name + '</b>' + stn(b) + '</div>';
+  }
+  function chead(b){
+    return '<div class="cell chead"><img src="' + thumb(b) + '" alt="" width="92" height="92" loading="lazy"><div><h3>' + b.name + '</h3>' + stn(b) + '</div></div>';
+  }
+
+  /* ---------- 2. 회원권 ---------- */
+  function priceCol(b, plus){
+    var p = b.price, out = chead(b);
+    if(p.ask){
+      out += '<div class="cell pask"><span class="cell-k">월 환산 · 12개월 · 포함 · 일일권</span><p class="ask">상담 시 안내</p>' +
+        '<p class="cell-s">공식 가격표 비공개</p>' +
+        '<p><button class="link" type="button" data-contact="' + b.key + '">' + b.name + ' 가격 물어보기</button></p></div>';
+    } else {
+      out += '<div class="cell pbig"><span class="cell-k">월 환산</span><p class="cell-v"><b class="v">' + p.m + '</b><span class="u">' + p.mu + '</span></p></div>';
+      out += '<div class="cell ptotal"><span class="cell-k">12개월 총액 · ' + p.tnote + '</span><p class="cell-v"><b class="num">' + p.total + '</b>원</p>' + (p.tsub ? '<p class="cell-s">' + p.tsub + '</p>' : '') + '</div>';
+      out += '<div class="cell"><span class="cell-k">포함</span><p class="cell-v">' + p.incl + '</p></div>';
+      out += '<div class="cell"><span class="cell-k">일일권</span><p class="cell-v"><b class="num">' + p.day + '</b>원</p></div>';
+    }
+    out += '<div class="cell ppt' + (plus.pt === b.key ? ' plus' : '') + '"><span class="cell-k">등록 혜택</span><p class="cell-v">' +
+      (p.pt ? 'PT <b class="num">' + p.pt + '</b>회 무료' : '<span class="vneg">상담 시 안내</span>') + '</p></div>';
+    out += '<div class="cell pextra"><span class="cell-k">그 밖에</span><p class="cell-v">' + p.extra + '</p></div>';
+    return '<article class="card pcol" aria-label="' + b.name + ' 회원권">' + out + '</article>';
+  }
+
+  /* ---------- 3. 시설 ---------- */
+  function facLayer(b, cat, pre){
+    var f = b.fac[cat], el = document.createElement("div");
+    el.className = "layer" + (pre ? " pre" : "");
+    var style = "--p:" + (f.p || "50% 50%") + ";--pm:" + (f.pm || f.p || "50% 50%") + (f.z ? ";--z:" + f.z + ";--o:" + f.o : "");
+    el.setAttribute("style", style);
+    el.innerHTML = f.fit
+      ? '<img class="blur" src="' + IMG + f.src + '" alt="" decoding="async"><img class="fit" src="' + IMG + f.src + '" alt="' + f.alt + '" decoding="async">'
+      : '<img src="' + IMG + f.src + '" alt="' + f.alt + '" decoding="async">';
+    return el;
+  }
+  function facMeta(b, cat){
+    var f = b.fac[cat];
+    return '<b>' + f.k + '</b>' + (f.f ? '<span>' + f.f + '</span>' : '');
+  }
+  function facCol(b){
+    return '<article class="card fcol" aria-label="' + b.name + ' 시설" data-fac="' + b.key + '">' +
+      '<figure class="fshot"><span class="stamp" hidden></span></figure>' +
+      '<p class="fmeta"></p></article>';
+  }
+  function fillFac(animate){
+    var cols = $$("#fac-panel [data-fac]");
+    var token = (fillFac.t = (fillFac.t || 0) + 1);
+    var news = cols.map(function(col){
+      var b = B[col.getAttribute("data-fac")], fig = $(".fshot", col);
+      $$(".layer.pre", fig).forEach(function(l){ l.remove(); });
+      var layer = facLayer(b, state.cat, animate);
+      fig.appendChild(layer);
+      return { col:col, b:b, fig:fig, layer:layer };
+    });
+    function commit(){
+      if(token !== fillFac.t) return;
+      news.forEach(function(n){
+        var f = n.b.fac[state.cat], st = $(".stamp", n.fig);
+        st.hidden = !f.tag; st.textContent = f.tag || "";
+        $(".fmeta", n.col).innerHTML = facMeta(n.b, state.cat);
+        n.layer.classList.remove("pre");
+        $$(".layer", n.fig).forEach(function(l){
+          if(l === n.layer) return;
+          if(animate) setTimeout(function(){ l.remove(); }, 380); else l.remove();
+        });
+      });
+    }
+    if(!animate){ commit(); return; }
+    /* 두 열의 새 사진이 모두 준비된 뒤 같은 프레임에 함께 바꾼다 */
+    var imgs = [];
+    news.forEach(function(n){ imgs = imgs.concat($$("img", n.layer)); });
+    Promise.all(imgs.map(function(i){ return i.decode ? i.decode().catch(function(){}) : Promise.resolve(); }))
+      .then(function(){ requestAnimationFrame(function(){ requestAnimationFrame(commit); }); });
+  }
+
+  /* ---------- 4. 등록 PT ---------- */
+  function ptCol(b, plus){
+    var p = b.price.pt, on = plus.pt === b.key;
+    return '<div class="card ptc' + (on ? ' plus' : '') + '">' +
+      '<p class="ptc-n">' + b.name + '</p>' +
+      (p ? '<p class="ptc-v">PT <b class="num">' + p + '</b>회 무료</p><p class="ptc-s">' + (on ? '한 번 더 받아요' : '등록하면') + '</p>'
+         : '<p class="ptc-v ask">상담 시 안내</p><p class="ptc-s">등록 혜택 공개 전</p>') +
+    '</div>';
+  }
+
+  /* ---------- 5. 트레이너 ---------- */
+  function trCol(b){
+    var list = b.tr.map(function(t){
+      var face = t.face
+        ? '<div class="face"><img src="' + IMG + t.face + '" style="' + t.fs + '" alt="' + t.n + ' ' + t.r + ' 얼굴 사진" loading="lazy" decoding="async"></div>'
+        : '<div class="face none"><img src="' + IMG + 'logo_symbol.png" alt="" width="600" height="400" loading="lazy"></div>';
+      var info = t.info.map(function(i){ return '<span>' + i + '</span>'; }).join("<br>");
+      if(t.none) info += (info ? '<br>' : '') + '<span class="tag">' + t.none + '</span>';
+      if(t.aw) info += '<span class="taward">' + rk(t.aw.rk) + '<span>' + (t.aw.y ? t.aw.y + ' ' : '') + t.aw.t +
+        (t.aw.y ? '' : todo(t.n + ' ' + t.aw.t + ' ' + t.aw.rk + '위의 연도를 확인해 주세요.')) + '</span></span>';
+      return '<li>' + face + '<p class="tname">' + t.n + '<small>' + t.r + '</small></p><p class="tinfo">' + info + '</p></li>';
+    }).join("");
+    return '<article class="card tcol" aria-labelledby="tn-' + b.key + '">' +
+      '<div class="thead"><h3 id="tn-' + b.key + '">' + b.name + '</h3><span class="cnt">' + b.tr.length + '명</span><span class="tag">' + b.trNote + '</span></div>' +
+      '<ul class="tlist">' + list + '</ul></article>';
+  }
+
+  /* ---------- 6. 방문 조건 ---------- */
+  function visitCol(b, plus){
+    var s = liveStatus(b);
+    var hours = b.hours.map(function(h){
+      return '<li' + (h[1] === "24시간" ? ' class="h24"' : '') + '><span>' + h[0] + '</span><span>' + h[1] + (h[2] ? todo(h[2]) : '') + '</span></li>';
+    }).join("");
+    var mapLink = '<a class="link" href="' + b.map + '" target="_blank" rel="noopener">길찾기</a>';
+    return '<article class="card vcol" aria-label="' + b.name + ' 방문 조건">' + chead(b) +
+      '<div class="cell"><span class="cell-k">지금</span><p class="live' + (s.open ? ' on' : '') + '" data-live="' + b.key + '"><span class="dot" aria-hidden="true"></span><span class="lt">' + s.text + '</span></p></div>' +
+      '<div class="cell' + (plus.h24 === b.key ? ' plus' : '') + '"><span class="cell-k">운영시간</span><ul class="hours">' + hours + '</ul></div>' +
+      '<div class="cell' + (plus.off === b.key ? ' plus' : '') + '"><span class="cell-k">휴무</span><p class="cell-v">' + b.off + '</p></div>' +
+      '<div class="cell' + (plus.park === b.key ? ' plus' : '') + '"><span class="cell-k">주차</span><p class="cell-v' + (b.park.score ? '' : ' vneg') + '">' + b.park.v + '</p>' + (b.park.s ? '<p class="cell-s">' + b.park.s + '</p>' : '') + '</div>' +
+      '<div class="cell"><span class="cell-k">오시는 길</span><p class="cell-v"><span class="lns way-ln" aria-hidden="true">' + lnBadges(b) + '</span><span class="sr">' + b.lines.map(function(l){ return LN_NAME[l]; }).join(", ") + ' </span>' + b.way.v + '</p><p class="cell-s">' + b.way.s + '</p></div>' +
+      '<div class="cell"><span class="cell-k">주소</span><p class="vaddr" data-addr>' + b.addr + '</p><p class="vacts"><button class="link" type="button" data-copy>주소 복사</button>' + mapLink + '</p></div>' +
+    '</article>';
+  }
+
+  /* ---------- 7. 선택 ---------- */
+  function monthText(b){ return b.price.ask ? '가격 상담 시 안내' : '월 <b class="num">' + b.price.m + '</b>' + b.price.mu; }
+  function pickCol(b){
+    return '<article class="card kcol" aria-labelledby="kn-' + b.key + '">' +
+      '<figure class="kshot" style="--p:' + b.hero.p + '"><img src="' + thumb(b) + '" alt="" loading="lazy" decoding="async"></figure>' +
+      '<div class="kinfo"><h3 id="kn-' + b.key + '">' + b.name + '</h3><p class="kfacts"><span>' + b.size.text.replace(/(\d+)/, '<b class="num">$1</b>') + '</span><span>' + monthText(b) + '</span><span>★ <b class="num">' + b.rate + '</b> · 리뷰 <b class="num">' + b.rev + '</b>건</span></p></div>' +
+      '<div class="kact"><button class="btn btn-wide" type="button" data-pick="' + b.key + '">이 지점으로 정했어요</button></div>' +
+    '</article>';
+  }
+  function pickedPanel(b){
+    var links = '<a class="link" href="tel:' + b.tel + '">전화 ' + b.telT + '</a>' +
+      '<a class="link" href="' + b.talk + '" target="_blank" rel="noopener">네이버 톡톡</a>' +
+      (b.kakao ? '<a class="link" href="' + b.kakao + '" target="_blank" rel="noopener">카카오톡 채널</a>' : '') +
+      (b.book ? '<a class="link" href="' + b.book + '" target="_blank" rel="noopener">네이버 예약</a>' : '') +
+      '<a class="link" href="' + b.map + '" target="_blank" rel="noopener">길찾기</a>';
+    return '<figure class="picked-shot" style="--p:' + b.hero.p + '"><img src="' + thumb(b) + '" alt="' + b.hero.alt + '" decoding="async"></figure>' +
+      '<div class="picked-body">' +
+        '<p class="picked-k">정한 지점</p>' +
+        '<h3 class="picked-name" id="picked-name">' + b.name + '</h3>' +
+        '<p class="picked-stn">' + stn(b) + '</p>' +
+        '<dl class="picked-facts">' +
+          '<div><dt>규모</dt><dd>' + b.size.text + '</dd></div>' +
+          '<div><dt>네이버 별점</dt><dd>★ <span class="num">' + b.rate + '</span> · <span class="num">' + b.rev + '</span>건</dd></div>' +
+          '<div><dt>회원권</dt><dd>' + (b.price.ask ? '상담 시 안내' : '월 <span class="num">' + b.price.m + '</span>' + b.price.mu) + '</dd></div>' +
+          '<div><dt>주차</dt><dd>' + b.park.v + '</dd></div>' +
+        '</dl>' +
+        '<button class="btn btn-primary btn-wide" type="button" data-contact="' + b.key + '">' + b.name + '에 문의하기</button>' +
+        '<p class="picked-links">' + links + '</p>' +
+        '<p class="picked-again"><button class="link" type="button" data-unpick>두 지점 다시 보기</button></p>' +
+      '</div>';
+  }
+
+  /* ---------- 비교 지점 고르기 ---------- */
+  function pairButtons(){
+    return PAIRS.map(function(p){
+      var a = B[p[0]], b = B[p[1]];
+      return '<button class="pair" type="button" data-pair="' + p.join("-") + '" aria-pressed="false">' +
+        '<span class="pair-thumbs" aria-hidden="true"><img src="' + thumb(a) + '" alt="" width="76" height="76"><img src="' + thumb(b) + '" alt="" width="76" height="76"></span>' +
+        '<span class="pair-names"><span>' + a.name + '</span><i aria-hidden="true">·</i><span>' + b.name + '</span></span>' +
+        '<span class="pair-on" aria-hidden="true">비교 중</span></button>';
+    }).join("");
+  }
+
+  /* ---------- 전체 그리기 ---------- */
+  function render(){
+    var a = state.pair[0], b = state.pair[1], A = B[a], Bb = B[b];
+    var plus = {
+      pt: better(function(x){ return x.price.pt; }, a, b),
+      h24: better(function(x){ return x.h24; }, a, b),
+      off: better(function(x){ return x.offS; }, a, b),
+      park: better(function(x){ return x.park.score; }, a, b)
+    };
+    var hero = $("#hero-cmp");
+    $$(".hcol", hero).forEach(function(n){ n.remove(); });
+    hero.insertAdjacentHTML("beforeend", heroCol(A) + heroCol(Bb));
+    $("#bridge").hidden = !(a === "gc" && b === "yd");
+    $("#pairbar-cmp").innerHTML = barCell(A) + barCell(Bb);
+    $("#price-cmp").innerHTML = priceCol(A, plus) + priceCol(Bb, plus);
+    $("#fac-panel").innerHTML = facCol(A) + facCol(Bb);
+    fillFac(false);
+    $("#pt-cmp").innerHTML = ptCol(A, plus) + ptCol(Bb, plus);
+    $("#tr-cmp").innerHTML = trCol(A) + trCol(Bb);
+    $("#visit-cmp").innerHTML = visitCol(A, plus) + visitCol(Bb, plus);
+    renderPick();
+    $$("[data-pair]").forEach(function(btn){ btn.setAttribute("aria-pressed", btn.getAttribute("data-pair") === state.pair.join("-") ? "true" : "false"); });
+  }
+  function renderPick(){
+    var panel = $("#picked"), grid = $("#pick-cmp");
+    if(state.picked){
+      grid.hidden = true; grid.innerHTML = "";
+      panel.innerHTML = pickedPanel(B[state.picked]); panel.hidden = false;
+      $("#pick-title").textContent = "여기로 정했어요";
+    } else {
+      panel.hidden = true; panel.innerHTML = "";
+      grid.innerHTML = pickCol(B[state.pair[0]]) + pickCol(B[state.pair[1]]); grid.hidden = false;
+      $("#pick-title").textContent = "어디로 정할까요?";
+    }
+  }
+  function setPair(key){
+    var p = key.split("-");
+    state.pair = p;
+    if(state.picked && p.indexOf(state.picked) < 0) state.picked = null;
+    render();
+    $("#announce").textContent = B[p[0]].name + "과 " + B[p[1]].name + "을 나란히 비교해요.";
+  }
+  function setCat(cat, focus){
+    if(cat === state.cat) return;
+    state.cat = cat;
+    $$(".tab").forEach(function(t){
+      var on = t.getAttribute("data-cat") === cat;
+      t.setAttribute("aria-selected", on ? "true" : "false");
+      t.tabIndex = on ? 0 : -1;
+      if(on && focus) t.focus();
+    });
+    $("#fac-panel").setAttribute("aria-labelledby", "tab-" + cat);
+    fillFac(!reduce);
+  }
+
+  /* ---------- 연결 ---------- */
+  $$("[data-pairs]").forEach(function(box){ box.innerHTML = pairButtons(); });
+  $$(".tab").forEach(function(t){
+    var on = t.getAttribute("data-cat") === state.cat;
+    t.setAttribute("aria-selected", on ? "true" : "false"); t.tabIndex = on ? 0 : -1;
+  });
+  $("#fac-panel").setAttribute("aria-labelledby", "tab-" + state.cat);
+  render();
+
+  var contact = $("#contact"), pairsSheet = $("#pairs-sheet");
+  function openSheet(d){ if(typeof d.showModal === "function") d.showModal(); else d.setAttribute("open", ""); }
+  function closeSheet(d){ if(d.close) d.close(); else d.removeAttribute("open"); }
+  var ICON = {
+    tel:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>',
+    chat:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg>',
+    kakao:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.5c-5 0-9 3.1-9 7 0 2.5 1.7 4.7 4.2 6l-.9 3.4c-.1.3.3.6.6.4l4-2.7c.4 0 .7.1 1.1.1 5 0 9-3.1 9-7s-4-7.2-9-7.2z"/></svg>',
+    book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>'
+  };
+  function openContact(key){
+    var b = B[key];
+    var row = function(href, ic, title, sub, ext){
+      return '<li><a href="' + href + '"' + (ext ? ' target="_blank" rel="noopener"' : '') + '><span class="ic" aria-hidden="true">' + ICON[ic] + '</span><span><b>' + title + '</b><small>' + sub + '</small></span><span class="go" aria-hidden="true">›</span></a></li>';
+    };
+    $("#contact-in").innerHTML =
+      '<div class="sheet-head"><img src="' + thumb(b) + '" alt="" width="104" height="104"><div><h2 id="contact-title">' + b.name + '에 문의하기</h2>' + stn(b) + '</div><button class="sheet-x" type="button" data-close>닫기</button></div>' +
+      '<ul class="clist">' +
+        row("tel:" + b.tel, "tel", "전화", b.telT, false) +
+        row(b.talk, "chat", "네이버 톡톡", "새 창에서 열려요", true) +
+        (b.kakao ? row(b.kakao, "kakao", "카카오톡 채널", "새 창에서 열려요", true) : "") +
+        (b.book ? row(b.book, "book", "네이버 예약", "방문 날짜 고르기", true) : "") +
+      '</ul>';
+    openSheet(contact);
+  }
+
+  document.addEventListener("click", function(e){
+    var t = e.target.closest("[data-contact],[data-pair],[data-open-pairs],[data-pick],[data-unpick],[data-copy],.tab");
+    if(!t) return;
+    if(t.hasAttribute("data-contact")) openContact(t.getAttribute("data-contact"));
+    else if(t.hasAttribute("data-pair")){ setPair(t.getAttribute("data-pair")); if(pairsSheet.open) closeSheet(pairsSheet); }
+    else if(t.hasAttribute("data-open-pairs")) openSheet(pairsSheet);
+    else if(t.hasAttribute("data-pick")){ state.picked = t.getAttribute("data-pick"); renderPick(); var p = $("#picked"); p.focus({ preventScroll:true }); p.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block:"start" }); }
+    else if(t.hasAttribute("data-unpick")){ state.picked = null; renderPick(); var f = $("#pick-cmp [data-pick]"); if(f) f.focus(); }
+    else if(t.hasAttribute("data-copy")) copyAddr(t);
+    else if(t.classList.contains("tab")) setCat(t.getAttribute("data-cat"));
+  });
+  [contact, pairsSheet].forEach(function(d){
+    d.addEventListener("click", function(e){ if(e.target === d || e.target.closest("[data-close]")) closeSheet(d); });
+  });
+  $(".tabs").addEventListener("keydown", function(e){
+    var i = CATS.indexOf(state.cat), n = null;
+    if(e.key === "ArrowRight") n = (i + 1) % CATS.length;
+    else if(e.key === "ArrowLeft") n = (i + CATS.length - 1) % CATS.length;
+    else if(e.key === "Home") n = 0;
+    else if(e.key === "End") n = CATS.length - 1;
+    if(n === null) return;
+    e.preventDefault(); setCat(CATS[n], true);
+  });
+
+  function copyAddr(btn){
+    var text = btn.closest(".cell").querySelector("[data-addr]").textContent;
+    var done = function(ok){ btn.textContent = ok ? "복사했어요" : "복사하지 못했어요"; setTimeout(function(){ btn.textContent = "주소 복사"; }, 2000); };
+    var fallback = function(){
+      var ta = document.createElement("textarea"); ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select(); var ok = false; try{ ok = document.execCommand("copy"); }catch(err){} ta.remove(); done(ok);
+    };
+    if(navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function(){ done(true); }, fallback);
+    else fallback();
+  }
+
+  /* 지금 운영 여부는 30초마다 다시 계산 */
+  setInterval(function(){
+    $$("[data-live]").forEach(function(el){
+      var s = liveStatus(B[el.getAttribute("data-live")]);
+      el.classList.toggle("on", s.open); $(".lt", el).textContent = s.text;
+    });
+  }, 30000);
+
+  /* 히어로와 '비교 지점 바꾸기'를 지나면 열 이름 띠를 보인다 */
+  var bar = $("#pairbar"), sw = $("#switch");
+  if("IntersectionObserver" in window){
+    new IntersectionObserver(function(es){
+      es.forEach(function(en){ bar.hidden = en.isIntersecting || en.boundingClientRect.top > 0; });
+    }, { rootMargin:"-" + (parseInt(getComputedStyle(document.documentElement).getPropertyValue("--hh"), 10) || 64) + "px 0px 0px 0px" }).observe(sw);
+  }
+
+  /* 확인용: ?y=1800 은 그 위치로 스크롤, ?sheet=gc|yd|pj|pairs 는 시트를 연 채로 연다 */
+  if(q.get("y")) window.addEventListener("load", function(){ window.scrollTo({ top:+q.get("y") || 0, behavior:"instant" }); });
+  if(B[q.get("sheet")]) openContact(q.get("sheet"));
+  else if(q.get("sheet") === "pairs") openSheet(pairsSheet);
+})();
+</script>
+</body>
+</html>

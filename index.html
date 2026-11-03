@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>로망휘트니스 홈페이지 시안 비교</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root {
+    --ink: #000;
+    --paper: #fff;
+    --line: #dcdcdc;
+    --muted: #5f5f5f;
+    --rose: #c94a63;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Pretendard Variable", Pretendard, system-ui, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.6;
+    word-break: keep-all;
+  }
+  main { max-width: 1120px; margin: 0 auto; padding: 56px 24px 96px; }
+  header img { height: 44px; display: block; margin-bottom: 28px; }
+  h1 { font-size: clamp(26px, 3.2vw, 36px); line-height: 1.3; margin: 0 0 12px; font-weight: 700; }
+  .lead { color: var(--muted); max-width: 640px; margin: 0 0 48px; }
+  .drafts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 24px; }
+  .draft { display: flex; flex-direction: column; border-top: 2px solid var(--ink); padding-top: 18px; }
+  .draft .key { font-size: 15px; font-weight: 700; color: var(--rose); }
+  .draft h2 { font-size: 22px; margin: 2px 0 10px; }
+  .draft p { margin: 0 0 10px; font-size: 15px; }
+  .draft .why { color: var(--muted); font-size: 14px; }
+  .draft .refs { font-size: 13px; color: var(--muted); margin-top: auto; padding-top: 12px; }
+  .draft a.open {
+    display: inline-block; margin-top: 16px; padding: 12px 18px;
+    background: var(--ink); color: var(--paper); text-decoration: none; font-weight: 600; font-size: 15px;
+  }
+  .draft a.open:hover { background: #333; }
+  a:focus-visible { outline: 3px solid var(--rose); outline-offset: 3px; }
+  .howto { border: 1px solid var(--line); padding: 20px 24px; margin: 0 0 40px; max-width: 860px; }
+  .howto h2 { font-size: 18px; margin: 0 0 6px; }
+  .howto p { margin: 0 0 10px; font-size: 15px; color: var(--muted); }
+  .howto ul { margin: 0 0 10px; padding-left: 20px; font-size: 15px; }
+  .howto li { margin-bottom: 4px; }
+  .howto .pairs { font-size: 14px; margin: 0; }
+  .drafts-new .key { font-size: 17px; }
+  .drafts-new .thumb { display: block; margin: 0 0 16px; border: 1px solid var(--line); overflow: hidden; }
+  .drafts-new .thumb img { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: cover; transition: transform .25s ease; }
+  .drafts-new .thumb:hover img { transform: scale(1.02); }
+  @media (prefers-reduced-motion: reduce) { .drafts-new .thumb img { transition: none; } }
+  .bench-link { margin: 40px 0 0; font-size: 15px; color: var(--muted); }
+  .bench-link a { color: var(--ink); }
+  .old-title { font-size: 22px; margin: 88px 0 6px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .old-lead { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
+  .drafts-old .draft { border-top-width: 1px; }
+  .drafts-old .draft h2 { font-size: 19px; }
+  section.todo-list { margin-top: 72px; max-width: 760px; }
+  section.todo-list h2 { font-size: 20px; margin: 0 0 6px; }
+  section.todo-list p { color: var(--muted); margin: 0 0 16px; font-size: 15px; }
+  section.todo-list ul { padding-left: 20px; margin: 0; }
+  section.todo-list li { margin-bottom: 6px; font-size: 15px; }
+  section.todo-list ul ul { margin-top: 6px; }
+  footer { margin-top: 64px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+  @media (max-width: 1080px) {
+    .drafts { grid-template-columns: repeat(2, 1fr); gap: 40px 24px; }
+  }
+  @media (max-width: 860px) {
+    .drafts { grid-template-columns: 1fr; gap: 40px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="assets/img/logo_symbol.png" alt="로망휘트니스 RM 로고">
+    <h1>로망휘트니스 홈페이지 새 시안 여섯 가지</h1>
+    <p class="lead">헬스장 대기업 대신, 홈페이지가 곧 쇼룸인 다른 업종(호텔·아파트·자동차·항공·애플·에어비앤비 등) 대기업 22곳의 화면 구성을 가져와 만든 시안이에요. 여섯 시안은 같은 사실과 같은 사진을 쓰고, <b>방문자가 무엇을 먼저 보고 어떤 순서로 결정하는지</b>가 서로 달라요.</p>
+  </header>
+
+  <section class="howto" aria-labelledby="howto-title">
+    <h2 id="howto-title">고르는 법</h2>
+    <p>휴대폰으로 각 시안의 첫 화면을 3초씩 보고, 아래 세 가지만 판단해 주세요. 두 개씩 짝지어 보면 차이가 잘 보여요.</p>
+    <ul>
+      <li><b>첫인상</b> 사진을 보고 가보고 싶어지나요?</li>
+      <li><b>초보 이해</b> 처음 온 사람이 여기서 뭘 할 수 있는지 보이나요?</li>
+      <li><b>방문 결정</b> 내 지점의 가격·주차·시간을 확인하고 문의까지 갈 수 있나요?</li>
+    </ul>
+    <p class="pairs">G와 H: 사진을 보다가 바로 문의 vs 보고 싶은 것부터 고르기 · I와 J: 운동 종류가 정리돼 보이기 vs 실제 장면으로 마음 움직이기 · K와 L: 한 지점에 몰입 vs 두 지점을 비교</p>
+  </section>
+
+  <div class="drafts drafts-new">
+    <article class="draft">
+      <a class="thumb" href="g-checkin.html" tabindex="-1" aria-hidden="true"><img src="assets/img/thumbs/g.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <span class="key">G</span>
+      <h2>체크인 · 둘러보며 바로 문의</h2>
+      <p>밝은 머신존 사진이 화면을 채우고, 사진 아래에 호텔 프런트 같은 문의 카드가 걸쳐 있어요. 지점과 궁금한 것(가격·PT·주차·시간)을 고르면 그 지점 전화·톡으로 바로 이어져요.</p>
+      <p class="why">"가야겠다"는 마음이 든 순간 문의까지의 거리를 가장 짧게 만든 버전이에요.</p>
+      <p class="refs">가져온 구조: 에미레이트(사진 위 예약 카드), 아만(버튼 하나·비대칭 사진), 포시즌스</p>
+      <a class="open" href="g-checkin.html">G 시안 열기</a>
+    </article>
+    <article class="draft">
+      <a class="thumb" href="h-doors.html" tabindex="-1" aria-hidden="true"><img src="assets/img/thumbs/h.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <span class="key">H</span>
+      <h2>큰문 · 다섯 개의 입구</h2>
+      <p>입구 사진 옆에 큰 문 다섯 개(첫 운동 · 공간 · 트레이너 · 가격 · 지점)가 있어요. 문을 누르면 같은 번호의 장으로 가고, 스크롤해도 지금 몇 번 문에 있는지 보여요.</p>
+      <p class="why">초보가 "어디를 눌러야 하지?"를 고민하지 않게, 메뉴 자체를 버튼으로 만든 버전이에요.</p>
+      <p class="refs">가져온 구조: 디에이치(오른쪽 세로 큰 메뉴), 포르쉐(메뉴를 숨긴 몰입)</p>
+      <a class="open" href="h-doors.html">H 시안 열기</a>
+    </article>
+    <article class="draft">
+      <a class="thumb" href="i-catalog.html" tabindex="-1" aria-hidden="true"><img src="assets/img/thumbs/i.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <span class="key">I</span>
+      <h2>운동목록 · 사진 타일 카탈로그</h2>
+      <p>"걷기부터 시작해요." 유산소, 머신, 덤벨, 스트레칭, 1:1 PT가 사진 한 장씩의 큰 타일로 이어져요. 타일 하나에 운동 하나, 글은 한 줄이에요.</p>
+      <p class="why">"여기서 내가 뭘 할 수 있지?"에 사진으로 답하는 버전이에요.</p>
+      <p class="refs">가져온 구조: 애플(타일 하나에 메시지 하나), 포르쉐(모델 라인업 카드)</p>
+      <a class="open" href="i-catalog.html">I 시안 열기</a>
+    </article>
+    <article class="draft">
+      <a class="thumb" href="j-photobook.html" tabindex="-1" aria-hidden="true"><img src="assets/img/thumbs/j.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <span class="key">J</span>
+      <h2>현장록 · 사진집</h2>
+      <p>실제 스트레칭 수업 사진을 표지로, 공간과 기록을 크기가 다른 사진과 큰 도판 번호로 엮은 화보예요. 설명 대신 사진 아래 짧은 캡션만 있어요.</p>
+      <p class="why">사진이 설명을 대신하는 버전이에요. 촬영 사진이 들어올수록 가장 크게 좋아져요.</p>
+      <p class="refs">가져온 구조: 더현대(자체 매거진), 나이키(사진 아래 카피), 무인양품, 루이비통</p>
+      <a class="open" href="j-photobook.html">J 시안 열기</a>
+    </article>
+    <article class="draft">
+      <a class="thumb" href="k-branches.html" tabindex="-1" aria-hidden="true"><img src="assets/img/thumbs/k.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <span class="key">K</span>
+      <h2>동네관 · 지점별 쇼룸</h2>
+      <p>세 지점이 같은 크기로 첫 화면에 나란히 서고, 지점마다 사진·가격·주차·트레이너가 다 들어 있는 작은 홈페이지(브랜드관)가 이어져요. 화면 옆 지점 탭으로 관을 넘겨요.</p>
+      <p class="why">"내가 실제로 갈 곳이 어떤 곳인지"를 가장 구체적으로 보여주는 버전이에요.</p>
+      <p class="refs">가져온 구조: 래미안(단지 카드·고정 검색 탭·수상 배지), 제네시스 스페이스, 설화수 플래그십</p>
+      <a class="open" href="k-branches.html">K 시안 열기</a>
+    </article>
+    <article class="draft">
+      <a class="thumb" href="l-compare.html" tabindex="-1" aria-hidden="true"><img src="assets/img/thumbs/l.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <span class="key">L</span>
+      <h2>나란히 · 두 지점 비교</h2>
+      <p>고척신정점과 영등포점을 같은 기준의 사진과 숫자로 나란히 놓아요. 시설 탭을 바꾸면 양쪽 사진이 함께 바뀌고, 가격·주차·시간도 같은 줄에서 비교해요.</p>
+      <p class="why">두 정거장 거리의 두 지점 사이에서 고민하는 사람을 위한 버전이에요.</p>
+      <p class="refs">가져온 구조: 에어비앤비(사진·가격·평점 카드), 제네시스(필터 탭), 대한항공(첫 화면이 곧 도구)</p>
+      <a class="open" href="l-compare.html">L 시안 열기</a>
+    </article>
+  </div>
+
+  <p class="bench-link">시안을 만들기 전에 조사한 22개 대기업 홈페이지 구성은 <a href="benchmark.html">벤치마크 페이지</a>에 있어요.</p>
+
+  <h2 class="old-title">이전 시안 A~F</h2>
+  <p class="old-lead">같은 자료로 먼저 만든 시안이에요. D·E·F는 사장님 피드백을 받고 만든 버전이에요.</p>
+  <div class="drafts drafts-old">
+    <article class="draft">
+      <span class="key">A</span>
+      <h2>갤러리 · 조용한 첫인상</h2>
+      <p>깨끗하고 넓은 공간 사진과 짧은 문장 한 줄로 말해요. 리뷰에서 가장 많이 나온 말이 "시설이 깔끔해요"라서, 공간이 직접 말하게 했어요.</p>
+      <p class="why">관리가 잘 된 조용한 페이지는 아무 주장 없이도 "잘 운영되는 곳"이라는 인상을 줘요.</p>
+      <p class="refs">참고한 이유: Aesop 매장, 아만 호텔, 애플</p>
+      <a class="open" href="a-gallery.html">A 시안 열기</a>
+    </article>
+    <article class="draft">
+      <span class="key">B</span>
+      <h2>안내판 · 투명한 정보</h2>
+      <p>지금 열려 있는지, 얼마인지, 주차는 되는지, 어느 지점이 나한테 맞는지를 정확하게 답해요. 가격과 약점도 숨기지 않아요.</p>
+      <p class="why">헬스장을 고를 때 가장 불안한 건 숨은 가격과 PT 강요예요. 묻기 전에 답해 주면 믿게 돼요.</p>
+      <p class="refs">참고한 이유: 토스, 신라호텔 체련장 안내, 애플스토어 운영시간, 에어비앤비 총액 표시</p>
+      <a class="open" href="b-info.html">B 시안 열기</a>
+    </article>
+    <article class="draft">
+      <span class="key">C</span>
+      <h2>사람 · 동네 이야기</h2>
+      <p>트레이너가 페이지의 중심이에요. 고척·신정, 도림·신도림, 운정·교하처럼 동네 이름을 걸고 친근하게 말해요.</p>
+      <p class="why">사람들은 회사가 아니라 사람을 보고 등록해요. PT는 특히 트레이너를 보고 골라요.</p>
+      <p class="refs">참고한 이유: 펠로톤 강사 소개, 룰루레몬 커뮤니티, 배민 말투, 파타고니아의 솔직함</p>
+      <a class="open" href="c-people.html">C 시안 열기</a>
+    </article>
+    <article class="draft">
+      <span class="key">D</span>
+      <h2>첫걸음 · 처음이 쉬운 헬스장</h2>
+      <p>운동이 처음인 사람이 "여기 가도 되겠다"고 느끼는 데 집중했어요. 첫 화면은 "시작은 쉽게, 운동은 제대로." 한 문장과 "1회 무료 PT 신청" 버튼 하나예요. 공간, 트레이너, 수상 기록, 후기, PT 원칙과 가격, 첫 방문 순서로 이어지며, 사진과 확인된 기록으로 믿음을 만들어요.</p>
+      <p class="why">"가고 싶은 느낌이 없다, 초보는 뭘 할 수 있는지 모른다, 믿음직한 게 없다"는 사장님 피드백에 답한 시안이에요. 아직 없는 사진과 후기는 샘플로 채우고 모서리에 "샘플 · 교체 예정", "예시" 태그를 붙였어요. 공개 전에 아래 목록대로 바꿔야 해요.</p>
+      <p class="refs">참고한 이유: Planet Fitness 초보 환영 메시지와 수상 배지, 스포애니 숫자 신뢰와 트레이너 디렉토리, 에이블짐 지점 수 강조</p>
+      <a class="open" href="d-first.html">D 시안 열기</a>
+    </article>
+    <article class="draft">
+      <span class="key">E</span>
+      <h2>무대 · 선언형 다크</h2>
+      <p>무대 조명 콘셉트의 어두운 페이지예요. "무대에서 증명했고, 여기서 가르친다" 한 문장이 화면을 지배하고, 수상 기록이 대회 결과표처럼 읽혀요. 어두운 페이지에서 밝은 면은 초보 환영 섹션 하나뿐이에요.</p>
+      <p class="why">수상과 실력을 가장 세게 미는 버전이에요. "자신감 최대치"가 어디까지 괜찮은지 보는 기준점. 샘플 사진과 예시 문구에는 D와 같은 태그가 붙어 있어요.</p>
+      <p class="refs">참고한 이유: 에이블짐의 에너지, Equinox의 선언, 대회 결과표</p>
+      <a class="open" href="e-strong.html">E 시안 열기</a>
+    </article>
+    <article class="draft">
+      <span class="key">F</span>
+      <h2>갤러리 · 프리미엄 미니멀</h2>
+      <p>사진을 갤러리 작품처럼 크게 걸고 여백으로 말해요. "운동, 제대로." 수상은 코치 사진에 붙는 원형 메달 뱃지로, 평수·별점·가격은 큰 숫자로 보여줘요.</p>
+      <p class="why">소리치지 않는 자신감이에요. 수상을 "가르치는 사람의 증명"으로 트레이너 옆에 묶은 버전. 샘플 사진과 예시 문구에는 D와 같은 태그가 붙어 있어요.</p>
+      <p class="refs">참고한 이유: Equinox의 절제, Aesop·애플의 여백, 갤러리 라벨</p>
+      <a class="open" href="f-premium.html">F 시안 열기</a>
+    </article>
+  </div>
+
+  <section class="todo-list" aria-labelledby="todo-title">
+    <h2 id="todo-title">사장님께 확인받아야 할 것</h2>
+    <p>시안에서 "확인 필요"로 표시한 정보예요. 공개 자료(현재 홈페이지, 네이버 플레이스, 지점 블로그)에서 찾지 못했거나 출처끼리 서로 달랐어요.</p>
+    <ul>
+      <li>영등포점 회원권 가격 (공식 공개 자료 없음, 시안에는 회원 블로그에 적힌 금액을 임시로 넣음)</li>
+      <li>가격표 금액이 부가세 별도인지 포함인지</li>
+      <li>트레이너 전문 분야와 한마디, 시안 C의 운동 매너 문구 (지금은 예시 문구)</li>
+      <li>고척신정점 토요일 운영시간 (06시 시작 / 10시 시작으로 출처마다 다름)</li>
+      <li>영등포점 월요일 마감 시간 (23시 / 24시로 다름)</li>
+      <li>파주교하점 오픈 월 (2023년 2월 / 5월로 다름)</li>
+      <li>트레이너 현재 명단과 사진 (고척신정점 명단 변동 가능성, 영등포점 신규 트레이너, 파주교하점 경력 정보)</li>
+      <li>환불 기준, 보증보험 가입 여부</li>
+      <li>태닝 이용 요금</li>
+      <li>영등포점 사업자등록번호</li>
+      <li>사진 사용 동의 (트레이너 프로필 사진은 스튜디오 촬영본이라 사용 범위 확인 필요)</li>
+      <li>1회 무료 PT 제공 조건 확정: 가입 전에 받는지 가입 후에 받는지, 몇 분인지, 세 지점이 같은지 (시안 D의 메인 버튼 "1회 무료 PT 신청") (시안 D)</li>
+      <li><b>공개 전 반드시 교체</b>: 수상 섹션의 샘플 사진 4장(assets/img/sample, 유명 선수 사진, 출처는 NOTICE.txt). 우리 트레이너나 수상 실적처럼 보이게 공개하면 초상권·허위광고 문제가 돼요 (시안 D)</li>
+      <li><b>공개 전 반드시 교체</b>: 예시 후기 3건과 트레이너 한 줄 약속 12개. 지어낸 후기를 실제 후기처럼 올리면 표시광고법 위반 소지가 있어요 (시안 D)</li>
+      <li>트레이너 카드의 프로필 사진(스튜디오 촬영본)은 수업 장면 사진으로 바꿀 예정. 그 전까지 웹 게재 동의 확인 (시안 D)</li>
+      <li>"시설만 둘러보기" 방문을 받을 수 있는지: 몇 분쯤 걸리는지, "등록하지 않아도 돼요"라고 안내해도 되는지 (시안 D)</li>
+      <li>지점별 첫 방문 안내 가능 시간대 (운영시간과 별개로, 직원이나 트레이너가 처음 온 분을 안내할 수 있는 시간) (시안 D)</li>
+      <li>세 지점 공휴일 운영 여부와 시간 (영등포점은 공개 자료에 없음) (시안 D)</li>
+      <li>수상 기록 전체 목록: 트레이너별 대회명, 연도, 부문, 순위. 시안에는 이명기(2023 PCA), 배현욱(WNGP 의정부), 김원정(아시아대회), 김원우(러시아 오픈) 4건만 있고, 이명기 외 3건은 연도가 비어 있어요. 손주환, 박강훈, 이상혁, 윤지민, 파주교하점 4명은 수상 기록이 있는지부터 확인 (시안 D)</li>
+      <li>트레이너별 자격증과 지도 경력 (자격 정보가 없는 배현욱, 파주교하점 4명은 시안에서 "상담 때 안내해요"로 둠) (시안 D)</li>
+      <li>트레이너별 도와주는 목표 태그 2–3개 (시안에는 기존 소개를 바탕으로 넣은 예시, 파주교하점은 "분야 확인 중") (시안 D)</li>
+      <li>트레이너 본인이 쓴 한 줄 약속 (12명 모두, 시안에는 "예시" 태그가 붙은 임시 문구) (시안 D)</li>
+      <li>촬영 요청 사진 리스트 (시안 D). 지금은 샘플이나 지점 사진으로 채운 자리에 그대로 바꿔 끼워요.
+        <ul>
+          <li>찍는 비율: 수업 장면·시설·대회 사진은 가로 4:3 (잘려도 되게 주변 여백), 첫 화면 후보는 세로 사진도 함께, 트레이너 얼굴은 정면 정사각</li>
+          <li>대회 시상식 단상 사진 (트레이너별): 이명기 2023 PCA 클래식보디빌딩 체급 1위, 배현욱 WNGP 의정부 보디빌딩 오픈 2위, 김원정·김원우 태권도 대회 시상(있으면), 그 밖에 수상한 트레이너 전원</li>
+          <li>대회 무대 사진 (트레이너별): 포즈를 취한 무대 장면, 위와 같은 트레이너. 대회 사진 원본이면 해상도가 높아서 좋아요</li>
+          <li>메달·트로피 사진: 지점에 진열된 그대로, 지점마다 1컷</li>
+          <li>자격증 사진: 생활스포츠지도사, 운동처방사 등을 나란히 놓고 1컷. 주민번호 등 개인정보는 가림</li>
+          <li>트레이너별 회원 수업 장면 1–2컷: 고척신정점 김원정·김원우·이명기, 영등포점 손주환·박강훈·이상혁·배현욱·윤지민, 파주교하점 이광영·형지민·오소연·임지민. 형지민은 기존 스트레칭 사진이 있어서 1컷만 더. 기구 사용법 알려주기, 자세 잡아주기, 스트레칭 돕기처럼 '처음 온 회원을 돕는 장면'이면 좋아요. 회원 얼굴이 나오면 게재 동의서 필요</li>
+          <li>배우는 컷과 혼자 하는 컷 한 쌍: 같은 회원이 트레이너에게 배우는 장면 + 같은 동작을 혼자 하는 장면 (PT 없이도 혼자 할 수 있게 된다는 걸 보여줘요). 지점마다 1쌍</li>
+          <li>데스크에서 처음 온 회원을 맞이하고 안내하는 장면: 지점마다 1컷</li>
+          <li>초보용 도구: 운동 순서표를 건네는 장면, 기구의 QR 코드로 사용법 영상을 보는 장면(파주교하점)</li>
+          <li>트레이너 얼굴 사진: 파주교하점 이광영·형지민·오소연·임지민, 영등포점 윤지민 (형지민은 지금 수업 사진을 잘라 쓰고 있어서 따로 1장)</li>
+          <li>부족한 시설 컷: 고척신정점 탈의실·락커와 샤워실, 영등포점 개별 샤워실과 탈의실(스타일러, 에어드레서), 파주교하점 탈의실·샤워실, 태닝룸, 7층 GX실</li>
+          <li>오는 길 컷: 건물 입구와 엘리베이터에서 내렸을 때 첫 장면, 고척신정점 주차장 입구(목동남로 28)와 파주교하점 지하 주차장 입구, 밤에 들어오는 동선(24시간 운영 지점)</li>
+          <li>지점이 적혀 있지 않은 기존 사진 2장 확인: misc_plate_zone(창의 글자로 보아 고척신정점, 사진 속 회원 게재 동의 필요), misc_dumbbell_rack(영등포점으로 보임)</li>
+        </ul>
+      </li>
+      <li>첫 방문 순서(도착, 상담, 시설 안내, 첫 운동)가 실제 운영과 맞는지, 운동복·수건 대여 여부 (시안 D)</li>
+      <li>회원 변화 후기 3건: 다닌 기간, 처음 막혔던 것, 도움받은 것, 지금 혼자 하는 것, 지점, 이니셜, 게재 동의, 함께 실을 사진 (시안 D)</li>
+      <li>카카오톡 상담: 영등포점 카카오톡 채널 개설 여부 (지금은 고척신정점, 파주교하점만 있음), 세 지점 통합 채널로 할지 (시안 D)</li>
+      <li>시안 E·F에도 같은 항목이 적용돼요: 샘플 사진 교체, 예시 문구 교체, 무료 PT 조건 확정. E·F의 "첫 수업은 무료다" 문구는 조건이 확정돼야 그대로 쓸 수 있어요 (시안 E·F)</li>
+      <li>트레이너 프로필 원본 요청: 현재 사진에 촬영 스튜디오 워터마크(MOTION, DBRAVE 등)가 보여요. 워터마크 없는 원본과 웹 게재 허용 범위 확인 (시안 D·E·F)</li>
+    </ul>
+  </section>
+
+  <footer>시안 · 2026년 11월 · 평점과 리뷰 수는 2026년 11월 네이버 플레이스 기준</footer>
+</main>
+</body>
+</html>
